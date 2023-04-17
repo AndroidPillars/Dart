@@ -26,3 +26,28 @@ void main() {
 
 enum Gender { male, female }
 ```
+
+## Ternary Operator
+
+- Ternary operator can be used to replace an if..else statement in certain situations.
+- It evaluates and executes a block of code based on the condition.
+
+__Example__
+
+```ruby
+void main() {
+  var myAge = 18;
+
+  // TODO using if,else
+  if (myAge > 18) {
+    print("you are eligible for Marriage");
+  } else {
+    print("you are not eligible for Marriage");
+  }
+
+  // TODO using Ternary Operator
+  (myAge > 18)
+      ? print("you are eligible for Marriage")
+      : print("you are not eligible for Marriage");
+}
+```
