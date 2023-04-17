@@ -55,13 +55,13 @@ void main() {
 ## const vs final
 
 - Both represent immutability and read only.
-- final keyword will be used to declare run time values.
-- const keyword will be used to declare compile time values.
+- Final keyword will be used to declare run time values.
+- Const keyword will be used to declare compile time values.
 - Variables declared using the const keyword are implicitly final.
 
 __Need to Know,__
 
-- PREFER using const for const declarations.
+- Prefer using const for constant declarations.
 - Const declarations are more hot-reload friendly and allow to use const constructors if an instantiation references this declaration.
 
 __Example__
