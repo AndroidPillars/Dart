@@ -51,3 +51,35 @@ void main() {
       : print("you are not eligible for Marriage");
 }
 ```
+
+## const vs final
+
+- Both represent immutability and read only.
+- final keyword will be used to declare run time values.
+- const keyword will be used to declare compile time values.
+- Variables declared using the const keyword are implicitly final.
+
+__Need to Know,__
+
+- PREFER using const for const declarations.
+- Const declarations are more hot-reload friendly and allow to use const constructors if an instantiation references this declaration.
+
+__Example__
+
+```ruby
+void main() {
+  // TODO Using final keyword
+  DateTime nowDate = DateTime.now();
+  final int currYear = nowDate.year;
+  print(currYear.toString());
+
+  // TODO final keyword using late
+  late final int mCurrentYear;
+  mCurrentYear = nowDate.year;
+  print(mCurrentYear?.toString());
+
+  // TODO Using const keyword
+  const birthday = "2023/12/25";
+  print(birthday);
+}
+```
