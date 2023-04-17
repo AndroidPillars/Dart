@@ -83,3 +83,57 @@ void main() {
   print(birthday);
 }
 ```
+
+## Higher Order Function
+
+- The Function passed as parameter to another function or a Function can return another function or It can do both.
+
+__Example 1__
+
+```ruby
+void main() {
+  var mValueOne = calculator(4, 6, add);
+  print(mValueOne);
+
+  var mValueTwo = calculatorFunction(4, 6, add);
+  print(mValueTwo);
+}
+
+int calculator(int n1, int n2, Function calculation) {
+  return calculation(n1, n2);
+}
+
+Function calculatorFunction = (int n1, int n2, Function calculation) {
+  return calculation(n1, n2);
+};
+
+int add(int n1, int n2) {
+  return n1 + n2;
+}
+```  
+
+__Example 2__
+
+```ruby
+void main() {
+  var mFunction = Car(mDrive: slowDrive);
+  mFunction.mDrive();
+
+  mFunction.mDrive = fastDrive;
+  mFunction.mDrive();
+}
+
+class Car {
+  Car({required this.mDrive});
+
+  Function mDrive;
+}
+
+void slowDrive() {
+  print('The Car is driving Slowly');
+}
+
+void fastDrive() {
+  print('The Car is driving Fastly');
+}
+```
