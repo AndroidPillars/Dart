@@ -136,4 +136,38 @@ void slowDrive() {
 void fastDrive() {
   print('The Car is driving Fastly');
 }
+```  
+
+## Maps
+
+- Map is an object that stores data in the form of a key-value pair.
+- Each value is associated with its key, and it is used to access its corresponding value.
+- Both keys and values can be any type. 
+
+__Need to Know,__
+
+- In Map, each key must be unique, but the same value can occur multiple times.
+- But Unlike Lists Maps are unOrdered.
+
+__Example__
+
+```ruby
+void main() {
+  Map<String, int> phoneBook = {
+    'Android': 99998888,
+    'Flutter': 99998888,
+    'IOS': 99998888,
+  };
+  
+  print(phoneBook['Android']);
+
+  phoneBook['Android'] = 888888888;
+  print(phoneBook['Android']);
+
+  print(phoneBook.length);
+
+  print(phoneBook.keys);
+
+  print(phoneBook.values);
+}
 ```
