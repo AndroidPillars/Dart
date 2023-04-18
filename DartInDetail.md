@@ -298,7 +298,7 @@ void main() {
   // TODO late -> If the values is not initialized it throws an exception during the runtime.
   late String mValueTwo;
 
-  // TODO ?. -> If the values is null it returns null during the runtime.
+  // TODO ?. (Safe Navigation Operator) -> If the values is null it returns null during the runtime.
   print(mValue?.length);
 
   // TODO ! -> If the values is null it will throws an exception during the runtime.
@@ -307,7 +307,7 @@ void main() {
   // TODO ?? (Default Operator) -> If the values is null it will set the default keyword during the runtime.
   print(mValue ?? 'Default keyword');
 
-  // TODO ??= -> If the values is null it will set the default keyword during the runtime.
+  // TODO ??= (Fallback Assignment Operator) -> If the values is null it will set the default keyword during the runtime.
   mValue ??= 'Default keyword';
   print(mValue);
 
