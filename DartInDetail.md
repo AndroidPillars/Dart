@@ -264,6 +264,59 @@ void validateAge(int age) {
     throw new FormatException();
   }
 }
+```  
+
+## Null Aware Operators & Null Safety
+
+- Dart provides Null Aware Operators to make us deal with nullable variables.
+- If a variable is null we cannot perform an action and if we do so this may lead to null pointer exception & our application will crash during run-time.
+
+__Example 1__ 
+
+```ruby
+void main() {
+  employeeName();
+}
+
+void employeeName({String? mName}) {
+  if (mName == null) {
+    print('No Employee exists');
+  } else {
+    print('Employee Name is $mName');
+  }
+}
+```
+
+__Example 2 (Using Null Aware Operators)__ 
+
+```ruby
+void main() {
+  // TODO ? -> If the values is not initialized it returns null during the runtime.
+  String? mValue;
+  print(mValue);
+
+  // TODO late -> If the values is not initialized it throws an exception during the runtime.
+  late String mValueTwo;
+
+  // TODO ?. -> If the values is null it returns null during the runtime.
+  print(mValue?.length);
+
+  // TODO ! -> If the values is null it will throws an exception during the runtime.
+  print(mValue!.length);
+
+  // TODO ?? (Default Operator) -> If the values is null it will set the default keyword during the runtime.
+  print(mValue ?? 'Default keyword');
+
+  // TODO ??= -> If the values is null it will set the default keyword during the runtime.
+  mValue ??= 'Default keyword';
+  print(mValue);
+
+  // TODO ...? (Operational spread operator) -> If the values is null then it will not add or else it will add during the runtime.
+  List<int> lowerNumber = [1, 2, 3, 4, 5];
+  List<int>? upperNumbers;
+  lowerNumber = [...?lowerNumber, ...?upperNumbers];
+  print('The Numbers are ${lowerNumber}');
+}
 ```
 
 
