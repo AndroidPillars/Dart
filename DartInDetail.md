@@ -542,4 +542,30 @@ void main() {
   c = 123;
   print(c);
 }
+```  
+
+## Function
+
+- A Function is a block of organized, reusable code that is used to perform some action.
+- __Anonymous Function__ is just a Function just as it's name implies it has no name.
+
+__Example 1 (Named Function)__
+
+```ruby
+void main() {
+  var addedValue = addTwoNumbers(1, 2);
+  print(addedValue.toString());
+}
+
+int addTwoNumbers(int a, int b) {
+  return a + b;
+}
+```
+
+__Example 2 (Anonymous Function)
+
+```ruby
+onPressed: (){
+//TODO Something
+}
 ```
