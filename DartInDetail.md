@@ -471,3 +471,29 @@ class BankDetails {
   get getBalance => _bankBalance ?? 'UnAuthorized Access';
 }
 ```
+
+## Inheritance
+
+- Inheritance is the Process from which one object acquires all the properties and methods from its Parent Class.
+- We can't access private data members of a class through inheritance.
+- It provides Code Reusability and Method Overriding.
+- Types - Single Inheritance, Multilevel Inheritance and Hierarchical Inheritance.
+
+__Example__
+
+```ruby
+void main() {
+  PrivateBank mWithdrawValue = PrivateBank();
+  print(mWithdrawValue.mBalance);
+  print(mWithdrawValue.minimalWithdrawal());
+}
+
+class Banks {
+  int? mBalance = 1000;
+}
+
+class PrivateBank extends Banks {
+  String minimalWithdrawal() => 'Minimal withdrawal is 500';
+}
+```
+
