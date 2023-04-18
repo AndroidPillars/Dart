@@ -180,7 +180,7 @@ void main() {
 - It will be used When we need to wait there for the method to finish and then proceed with your code execution.
 - __Future__ is a type that comes from the future and returns value from your asynchronous function.
 - When we want to get a result from an async function.
-- Then((value){…}) is a callback that’s called when future completes successfully(with a value).
+- __Then((value){…})__ is a callback that’s called when future completes successfully(with a value).
 - When you want to process Future after it was successfully finished in an async way - program will continue execution after this async method was called, but .then() callback will be executed later.
 
 __Example__
