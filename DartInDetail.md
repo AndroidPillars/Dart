@@ -138,6 +138,36 @@ void fastDrive() {
 }
 ```  
 
+## List
+
+- Dart represents arrays in the form of List objects.
+- A List is simply an ordered group of objects. 
+
+__Example__
+
+```ruby
+void main() {
+  var mList = ['Android', 'Flutter', 'IOS'];
+
+  // TODO Using For in Loop
+  for (int i = 0; i < mList.length; i++) {
+    print(mList[i]);
+  }
+  
+  // TODO For getting the index Value
+  print(mList.indexOf('Android'));
+  // TODO For adding an item
+  mList.add('React');
+  // TODO For adding the item in specific position
+  mList.insert(1,'List');
+
+  // TODO Using For...In in Loop
+  for (String mStringValues in mList) {
+    print(mStringValues);
+  }
+}
+```
+
 ## Maps
 
 - Map is an object that stores data in the form of a key-value pair.
@@ -318,27 +348,5 @@ void main() {
   print('The Numbers are ${lowerNumber}');
 }
 ```  
-
-## List
-
-- A List is simply an ordered group of objects. 
-
-__Example__
-
-```ruby
-void main() {
-  var mList = ['Android', 'Flutter', 'IOS'];
-
-  // TODO Using For in Loop
-  for (int i = 0; i < mList.length; i++) {
-    print(mList[i]);
-  }
-
-  // TODO Using For...In in Loop
-  for (String mStringValues in mList) {
-    print(mStringValues);
-  }
-}
-```
 
 
