@@ -155,8 +155,8 @@ __Example__
 void main() {
   Map<String, int> phoneBook = {
     'Android': 99998888,
-    'Flutter': 99998888,
-    'IOS': 99998888,
+    'Flutter': 99956565,
+    'IOS': 99778888,
   };
   
   print(phoneBook['Android']);
@@ -170,4 +170,42 @@ void main() {
 
   print(phoneBook.values);
 }
+``` 
+
+## Future, Async and Await
+
+- __Async__ means that this function is asynchronous and you might need to wait a bit to get its result.
+- It will be used when we want to define an async method.
+- __Await__ literally means - wait here until this function is finished and you will get its return value.
+- It will be used When we need to wait there for the method to finish and then proceed with your code execution.
+- __Future__ is a type that comes from the future and returns value from your asynchronous function.
+- When we want to get a result from an async function.
+- Then((value){…}) is a callback that’s called when future completes successfully(with a value).
+- When you want to process Future after it was successfully finished in an async way - program will continue execution after this async method was called, but .then() callback will be executed later.
+
+__Example__
+
+```ruby
+void main() async {
+  print(createTable());
+  print(await addTable());
+  updateTable().then((String value) {
+    print(value);
+  });
+}
+Future<String> createTable() async {
+  return "Create";
+}
+Future<String> addTable() async {
+  return "Adding";
+}
+Future<String> updateTable() async {
+  return "Update";
+}
+
+//TODO Throws compile Error need to add async
+// Future<String> deleteTable() {
+//   return "Delete";
+// }
 ```
+
