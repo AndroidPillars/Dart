@@ -232,3 +232,36 @@ Future<String> fetchUserOrder() async {
 }
 ```
 
+## Exception Handling
+
+- The Exception Handling is a mechanism to handle the runtime errors so that normal flow of the application can be maintained.
+- four keyword Types -> try, catch, finally and throw.
+
+__Example__
+
+```ruby
+void main() {
+  int a = 1;
+  int b = 0;
+
+  try {
+    // TODO (~/) -> Divide, returning an integer result
+    int result = a ~/ b;
+    print(result.toString());
+
+    validateAge(-1);
+  } catch (ex) {
+    print(ex);
+  } finally {
+    print('finally block executed');
+  }
+}
+
+void validateAge(int age) {
+  if (age < 0) {
+    throw new FormatException();
+  }
+}
+```
+
+
