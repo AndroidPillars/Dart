@@ -2,7 +2,7 @@
 
 - The statically typed languages are those which check the variable types during compile time including languages like C, C++, Java, Swift, and Kotlin.
 - In Static programming languages, data types are known and checked during the compile time itself. 
-- But in Dynamic programming languages data types are checked only at the run-time includes languages like JS, Python R.
+- But in Dynamic programming languages data types are checked only at the run-time including languages like JS, Python R.
 - Now coming to Dart, It is a Statically typed programming language.
 - Dart also offers a dynamic variable that is checked during the runtime, also you can store any type of data in dynamic at runtime.
 - Now we can say that Dart is a statically typed language with the perk of dynamically typed programming languages. 
