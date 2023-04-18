@@ -317,6 +317,28 @@ void main() {
   lowerNumber = [...?lowerNumber, ...?upperNumbers];
   print('The Numbers are ${lowerNumber}');
 }
+```  
+
+## List
+
+- A List is simply an ordered group of objects. 
+
+__Example__
+
+```ruby
+void main() {
+  var mList = ['Android', 'Flutter', 'IOS'];
+
+  // TODO Using For in Loop
+  for (int i = 0; i < mList.length; i++) {
+    print(mList[i]);
+  }
+
+  // TODO Using For...In in Loop
+  for (String mStringValues in mList) {
+    print(mStringValues);
+  }
+}
 ```
 
 
