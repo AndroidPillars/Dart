@@ -547,9 +547,22 @@ void main() {
 ## Function
 
 - A Function is a block of organized, reusable code that is used to perform some action.
-- __Anonymous Function__ is just a Function just as it's name implies it has no name.
+- __Anonymous Function__ is just a Function just as its name implies it has no name.
+- Functions with No Parameters.
+- Parameter Types - Positional Paramter, Optional Positional Parameter, Named Parameter
+- By using Positional Parameter we can't skip or interchange the Parameters.
+- By using Optional Positional Parameter we can skip the parameter but we can't interchange the Parameters.
+- By using Named Parameter we can skip the parameter or interchange the Parameters.
 
-__Example 1 (Named Function)__
+__Example 1 (Named Function With No Parameter)__
+
+```ruby
+void methodNameOne() {
+  print('Hello World');
+}
+```
+
+__Example 2 (Named Function With Parameter)__
 
 ```ruby
 void main() {
@@ -569,3 +582,35 @@ onPressed: (){
 //TODO Something
 }
 ```
+
+__Example 4 (Named Function Using Positional Paramters)__
+
+```ruby
+bool methodNameTwo(int mValueOne, int mValueTwo) {
+  return true;
+}
+```
+
+__Example 4 (Named Function Using Optional Positional Parameters)__
+
+```ruby
+void main() {
+  print(methodNameThree(1));
+}
+
+int methodNameThree(int mValueOne, [String? mValueTwo]) {
+  return mValueOne;
+}
+```
+
+__Example 5 (Named Function Using Named Parameters)__
+
+```ruby
+void main() {
+  print(methodNameThree(mValueOne: 1));
+}
+
+int? methodNameThree({int? mValueOne, String? mValueTwo}) {
+  return mValueOne;
+}
+```  
