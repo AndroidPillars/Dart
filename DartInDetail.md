@@ -497,3 +497,49 @@ class PrivateBank extends Banks {
 }
 ```
 
+## Variable
+
+- Variable is a just a value that can change, depending on conditions or on information passed to the program. 
+
+__Example__
+
+```ruby
+var myName = 'Android';
+```  
+
+## Data Types
+
+- Dart the following Data Types.
+- Numbers
+  - int(1,2,3) - It Supports only int.
+  - double(1.0,2.0) - It Supports only double.
+  - num(1,1.0,2,2.0) - It Supports both int and double.
+- Strings
+- Boolean
+- var - DataType will create implicitly based on the values we provide.
+- Lists (or Arrays)
+- Dynamic - For Assigning Mixed Data Type.
+- Map - For defining a vlaues in Key Value pairs.
+- Set, Runes
+
+__Example__
+
+```ruby
+void main() {
+  // TODO Explicitly defining the datatype - String
+  String a = 'Flutter';
+  print(a);
+
+  // TODO Implicitly defining the datatype - dynamic
+  var b;
+  b = 'Android';
+  b = 123;
+  print(b);
+
+  // TODO Explicitly defining the datatype - dynamic
+  dynamic c;
+  c = 'IOS';
+  c = 123;
+  print(c);
+}
+```
