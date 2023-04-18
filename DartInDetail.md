@@ -183,7 +183,7 @@ void main() {
 - __Then((value){…})__ is a callback that’s called when future completes successfully(with a value).
 - When you want to process Future after it was successfully finished in an async way - program will continue execution after this async method was called, but .then() callback will be executed later.
 
-__Example__
+__Example 1__
 
 ```ruby
 void main() async {
@@ -207,5 +207,28 @@ Future<String> updateTable() async {
 // Future<String> deleteTable() {
 //   return "Delete";
 // }
+```
+
+__Example 2__
+
+```ruby
+void main() {
+  printOrderMessage();
+}
+
+Future<void> printOrderMessage() async {
+  try {
+    // TODO We use the await keyword get the async code
+    var order = await fetchUserOrder();
+    print('Awaiting user order...');
+    print(order);
+  } catch (err) {
+    print('Caught error: $err');
+  }
+}
+
+Future<String> fetchUserOrder() async {
+  return 'Ordered for Salads';
+}
 ```
 
