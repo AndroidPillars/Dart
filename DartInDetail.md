@@ -438,7 +438,7 @@ class Car {
 - So We will make our data members private which can be accessible only within the class.
 - By providing a getter or setter method, we can make our class read-only or write-only.
 
-__Example 1(Without Encapsulation)__
+__Example 1 (Without Encapsulation)__
 
 ```ruby
 void main() {
@@ -453,7 +453,7 @@ class BankDetails {
 }
 ```
 
-__Example 2(With Encapsulation)__
+__Example 2 (With Encapsulation)__
 
 ```ruby
 void main() {
