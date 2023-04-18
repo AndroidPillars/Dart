@@ -403,4 +403,29 @@ void loveCalculator() {
 }
 ```
 
+## Classes and Objects
 
+- A template (blueprint) for creating objects (the real thing) that we're going to showing in our app.
+- A class has two important things (i.e.) Properties and Methods.
+- Objects represent real life entities.
+- In Other words, it is an instance of a class which has state and Behaviour.
+
+__Example__
+
+```ruby
+void main() {
+  // TODO The Below Line defines the Object
+  Car myCar = Car();
+  myCar.drive();
+}
+
+class Car {
+  // TODO numberOfDoors is the Variable (i.e.) Properties
+  int numberOfDoors = 5;
+
+  // TODO drive is the Method
+  void drive() {
+    print('wheels start turning');
+  }
+}
+```
