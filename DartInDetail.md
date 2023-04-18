@@ -429,3 +429,45 @@ class Car {
   }
 }
 ```
+
+## Encapsulation
+
+- Binding (or wrapping) code and data together into a single unit are known as Encapsulation.
+- The whole idea behind Encapsulation is to hide the implementation details from the users.
+- By making the data members public which can be accessed anywhere which is unsafe.
+- So We will make our data members private which can be accessible only within the class.
+- By providing a getter or setter method, we can make our class read-only or write-only.
+
+__Example 1(Without Encapsulation)__
+
+```ruby
+void main() {
+  final john = BankDetails();
+  john.bankBalance = 1000;
+
+  print(john.bankBalance);
+}
+
+class BankDetails {
+  int? bankBalance;
+}
+```
+
+__Example 2(With Encapsulation)__
+
+```ruby
+void main() {
+  final flutter = BankDetails();
+  flutter.bankBalance = 1000;
+
+  print(flutter.getBalance);
+}
+
+class BankDetails {
+  int? _bankBalance;
+
+  set bankBalance(int value) => _bankBalance = value;
+
+  get getBalance => _bankBalance ?? 'UnAuthorized Access';
+}
+```
