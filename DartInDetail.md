@@ -250,6 +250,8 @@ void main() {
     print(result.toString());
 
     validateAge(-1);
+  } on UnsupportedError {
+    print('UnsupportedError');
   } catch (ex) {
     print(ex);
   } finally {
