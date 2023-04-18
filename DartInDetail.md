@@ -562,7 +562,7 @@ int addTwoNumbers(int a, int b) {
 }
 ```
 
-__Example 2 (Anonymous Function)
+__Example 2 (Anonymous Function)__
 
 ```ruby
 onPressed: (){
