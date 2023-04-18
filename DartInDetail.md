@@ -1,3 +1,12 @@
+## Difference Between Static and Dynamic Typed Language
+
+- The statically typed languages are those which check the variable types during compile time including languages like C, C++, Java, Swift, and Kotlin.
+- In Static programming languages, data types are known and checked during the compile time itself. 
+- But in Dynamic programming languages data types are checked only at the run-time includes languages like JS, Python R.
+- Dart offers a dynamic variable that is checked at runtime, also you can store any type of data in dynamic at runtime.
+- Now we can say that Dart is a statically typed language with the perk of dynamically typed programming languages. 
+- Mean Dart is an optionally typed programming language that offers both static and dynamic.
+
 ## Enum(Enumeration)
 
 - It is just a data type that contains some fixed set of constants which is declared using the keyword enum. 
@@ -377,4 +386,11 @@ void loveCalculator() {
   }
 }
 ```
+
+## Dart
+
+- It is a open source and powerful language very similar to Oops.
+- It is a Statically typed programming language (i.e.) If we define a variable as String, We cannot assign other Values like Int, Bool, etc.. but it supports Dynamic.
+- It is also a compiled programming Language (i.e.) It supports Two Types of Compilation -> AOT(Ahead of Time) and JIT(Just in Time)
+- When we try to run a Dart Program, We have to compile it and then run but it runs Automatically.
 
