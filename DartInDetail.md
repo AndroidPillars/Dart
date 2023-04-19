@@ -37,9 +37,9 @@ void main() {
 
 ## String Interpolation, concatenation and Type inference
 
-- __Type inference__ which allows us to declare a variable without explicitly mentioning the data type. 
-- __String concatenation__ is used to combine Multiple Strings.
-- __String interpolation__ is a method of concatenating, formatting, and manipulating strings. 
+- __Type Inference__ which allows us to declare a variable without explicitly mentioning the data type. 
+- __String Concatenation__ is used to combine Multiple Strings.
+- __String Interpolation__ is a method of concatenating, formatting, and manipulating strings. 
 
 ```ruby
 void main() {
