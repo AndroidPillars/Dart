@@ -26,8 +26,8 @@
 ## Dart Entry Point
 
 ```ruby
-// TODO main() is the Entry point of our Application
-// TODO void means it will return nothing and void is Optional (i.e.) We can also remove void
+// TODO main() is the Entry point of our Application.
+// TODO void means it will return nothing and void is Optional (i.e.) We can also remove void.
 void main() {
   // TODO We can assign a String either by using single or double quotes.
   print('Hello World');
