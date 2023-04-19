@@ -33,9 +33,16 @@ void main() {
   print('Hello World');
   print("Hello World");
   
-  // TODO For Using Apostrophe and new line we have to do as of below,
+  // TODO For Using Apostrophe and new line we have to do as of below.
   print("Github - It's is a Awesome Place to Learn \n the New Technology");
-  print('Github - It\'s is a Awesome Place to Learn \n the New Technology');
+  print('Github - It\'s is a Awesome Place to Learn \n the New Technology');  
+  
+  // TODO We can also print the Multi-line String as of below.
+  print('''Hello
+  World''');
+  
+  print("""Hello
+  World""");
 }
 ```  
 
@@ -43,7 +50,7 @@ void main() {
 
 - __Type Inference__ which allows us to declare a variable without explicitly mentioning the data type. 
 - __String Concatenation__ is used to combine Multiple Strings.
-- __String Interpolation__ is a method of concatenating, formatting, and manipulating strings. 
+- __String Interpolation__ is a method of concatenating, formatting, and manipulating strings (i.e.) Used to replace a Variables actual value with in a String. 
 
 ```ruby
 void main() {
@@ -59,6 +66,7 @@ void main() {
   // TODO String concatenation - Combining Multiple Strings
   print('The Value is ' + mStringValueOne + ' ' + mStringValueTwo);
   print('The Values Length is ${mStringValueOne.length} + ${mStringValueTwo.length}');
+  
 }
 ```  
 
