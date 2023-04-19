@@ -23,6 +23,38 @@
 - Dart also supports a dynamic variable that is checked during the runtime.
 - It is also a compiled programming Language (i.e.) It supports Two Types of Compilation -> AOT(Ahead of Time during Development time) and JIT(Just in Time during Production Mode)
 
+## Dart Entry Point
+
+```ruby
+// TODO main() is the Entry point of our Application
+// TODO void means it will return nothing and void is Optional (i.e.) We can also remove void
+void main() {
+  // TODO We can assign a String either by using single or double quotes.
+  print('Hello World');
+  print("Hello World");
+}
+```  
+
+## String Interpolation, concatenation and Type inference
+
+- __Type inference__ which allows us to declare a variable without explicitly mentioning the data type. 
+- __String concatenation__ is used to combine Multiple Strings.
+- __String interpolation__ is a method of concatenating, formatting, and manipulating strings. 
+
+```ruby
+void main() {
+  // TODO var keyword is the Type inference. 
+  var mStringValueOne = 'Hello';
+   // TODO In String keyword we are explicitly defined the Data Type. 
+  String mStringValueTwo = 'World';
+  // TODO String Interpolation
+  print('The Value is $mStringValueOne $mStringValueTwo');
+  // TODO String concatenation - Combining Multiple Strings
+  print('The Value is ' + mStringValueOne + ' ' + mStringValueTwo);
+  print('The Values Length is ${mStringValueOne.length} + ${mStringValueTwo.length}');
+}
+```  
+
 ## Enum(Enumeration)
 
 - It is just a data type that contains some fixed set of constants which is declared using the keyword enum. 
