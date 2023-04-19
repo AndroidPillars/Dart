@@ -32,6 +32,10 @@ void main() {
   // TODO We can assign a String either by using single or double quotes.
   print('Hello World');
   print("Hello World");
+  
+  // TODO For Using Apostrophe and new line we have to do as of below,
+  print("Github - It's is a Awesome Place to Learn \n the New Technology");
+  print('Github - It\'s is a Awesome Place to Learn \n the New Technology');
 }
 ```  
 
@@ -79,7 +83,62 @@ void main() {
 
   print("Hello World");
 }
-```
+```  
+
+## Variable
+
+- Variable is a just a value that can change, depending on conditions or on information passed to the program. 
+
+__Example__
+
+```ruby
+void main() {
+  // TODO var keyword is the Type inference.
+  var myName = 'Android';
+}
+```  
+
+## Data Types
+
+- Dart the following Data Types.
+- Numbers
+  - int(1,2,3) - It Supports only int.
+  - double(1.0,2.0) - It Supports only double.
+  - num(1,1.0,2,2.0) - It Supports both int and double.
+- Srting
+- bool
+- var - DataType will create implicitly based on the values we provide.
+- List (or Arrays)
+- dynamic - For Assigning Mixed Data Type.
+- map - For defining a vlaues in Key Value pairs.
+- Set, runes
+
+__Need to Know,__
+
+- Dart is a Object Oriented Programming Language and So everything is object in here even the null type.
+
+__Example__
+
+```ruby
+void main() {
+  // TODO Explicitly defining the datatype - String
+  String a = 'Flutter';
+  print(a);
+
+  // TODO Implicitly defining the datatype - dynamic
+  var b;
+  b = 'Android';
+  b = 123;
+  print(b);
+
+  // TODO Explicitly defining the datatype - dynamic
+  dynamic c;
+  c = 'IOS';
+  c = 123;
+  print(c);
+}
+```  
+
 
 ## Enum(Enumeration)
 
@@ -554,53 +613,6 @@ class PrivateBank extends Banks {
   String minimalWithdrawal() => 'Minimal withdrawal is 500';
 }
 ```
-
-## Variable
-
-- Variable is a just a value that can change, depending on conditions or on information passed to the program. 
-
-__Example__
-
-```ruby
-var myName = 'Android';
-```  
-
-## Data Types
-
-- Dart the following Data Types.
-- Numbers
-  - int(1,2,3) - It Supports only int.
-  - double(1.0,2.0) - It Supports only double.
-  - num(1,1.0,2,2.0) - It Supports both int and double.
-- Strings
-- Boolean
-- var - DataType will create implicitly based on the values we provide.
-- Lists (or Arrays)
-- Dynamic - For Assigning Mixed Data Type.
-- Map - For defining a vlaues in Key Value pairs.
-- Set, Runes
-
-__Example__
-
-```ruby
-void main() {
-  // TODO Explicitly defining the datatype - String
-  String a = 'Flutter';
-  print(a);
-
-  // TODO Implicitly defining the datatype - dynamic
-  var b;
-  b = 'Android';
-  b = 123;
-  print(b);
-
-  // TODO Explicitly defining the datatype - dynamic
-  dynamic c;
-  c = 'IOS';
-  c = 123;
-  print(c);
-}
-```  
 
 ## Function
 
