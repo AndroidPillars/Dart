@@ -46,30 +46,6 @@ void main() {
 }
 ```  
 
-## String Interpolation, concatenation and Type inference
-
-- __Type Inference__ which allows us to declare a variable without explicitly mentioning the data type. 
-- __String Concatenation__ is used to combine Multiple Strings.
-- __String Interpolation__ is a method of concatenating, formatting, and manipulating strings (i.e.) Used to replace a Variables actual value with in a String. 
-
-```ruby
-void main() {
-  // TODO var keyword is the Type inference. 
-  var mStringValueOne = 'Hello';
-  
-   // TODO In String keyword we are explicitly defined the Data Type. 
-  String mStringValueTwo = 'World';
-  
-  // TODO String Interpolation
-  print('The Value is $mStringValueOne $mStringValueTwo');
-  
-  // TODO String concatenation - Combining Multiple Strings
-  print('The Value is ' + mStringValueOne + ' ' + mStringValueTwo);
-  print('The Values Length is ${mStringValueOne.length} + ${mStringValueTwo.length}');
-  
-}
-```  
-
 ## Adding Comment Line
 
 - A comment is an explanation or description of the source code of the program.
@@ -146,6 +122,37 @@ void main() {
   print(c);
 }
 ```  
+
+## String Interpolation, concatenation and Type inference
+
+- __Type Inference__ which allows us to declare a variable without explicitly mentioning the data type. 
+- __String Concatenation__ is used to combine Multiple Strings.
+- __String Interpolation__ is a method of concatenating, formatting, and manipulating strings (i.e.) Used to replace a Variables actual value with in a String. 
+
+__Example__
+
+```ruby
+void main() {
+  // TODO var keyword is the Type inference. 
+  var mStringValueOne = 'Hello';
+  
+   // TODO In String keyword we are explicitly defined the Data Type. 
+  String mStringValueTwo = 'World';
+  
+  // TODO String Interpolation
+  print('The Value is $mStringValueOne $mStringValueTwo');
+  
+  // TODO String concatenation - Combining Multiple Strings
+  print('The Value is ' + mStringValueOne + ' ' + mStringValueTwo);
+  print('The Values Length is ${mStringValueOne.length} + ${mStringValueTwo.length}');
+  
+}
+```  
+
+## Type Conversion
+
+- Conversion of one Data Type to another Data Type.
+
 
 
 ## Enum(Enumeration)
