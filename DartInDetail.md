@@ -23,7 +23,7 @@
 - Dart also supports a dynamic variable that is checked during the runtime.
 - It is also a compiled programming Language (i.e.) It supports Two Types of Compilation -> AOT(Ahead of Time during Development time) and JIT(Just in Time during Production Mode)
 
-## Dart Entry Point
+## Dart - Entry Point
 
 ```ruby
 // TODO main() is the Entry point of our Application.
