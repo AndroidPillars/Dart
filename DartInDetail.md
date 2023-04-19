@@ -45,15 +45,41 @@ void main() {
 void main() {
   // TODO var keyword is the Type inference. 
   var mStringValueOne = 'Hello';
+  
    // TODO In String keyword we are explicitly defined the Data Type. 
   String mStringValueTwo = 'World';
+  
   // TODO String Interpolation
   print('The Value is $mStringValueOne $mStringValueTwo');
+  
   // TODO String concatenation - Combining Multiple Strings
   print('The Value is ' + mStringValueOne + ' ' + mStringValueTwo);
   print('The Values Length is ${mStringValueOne.length} + ${mStringValueTwo.length}');
 }
 ```  
+
+## Adding Comment Line
+
+- A comment is an explanation or description of the source code of the program.
+- Generally Comment makes the program easier to read and understand.
+- These are the statements that are not executed by the compiler or an interpreter.
+- Type -> In-line Comment, Block Comment and Documentation.
+
+__Example__
+
+```ruby
+void main() {
+  // TODO - This is the In-line Comment Line.
+
+  /*
+   TODO - This is the Block Comment Line.
+   */
+
+  /// TODO - For Documentation
+
+  print("Hello World");
+}
+```
 
 ## Enum(Enumeration)
 
