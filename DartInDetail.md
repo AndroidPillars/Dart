@@ -69,10 +69,10 @@ __Example__
 
 ```ruby
 void main() {
-  // TODO - This is the In-line Comment Line.
+  // TODO - This is the In-line Comment Line which will be used for Single Line Comment.
 
   /*
-   TODO - This is the Block Comment Line.
+   TODO - This is the Block Comment Line which will be used for Multiple Line Comment.
    */
 
   /// TODO - For Documentation
