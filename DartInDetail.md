@@ -376,6 +376,9 @@ void main() {
         print(mSelectedGender.name);
       }
       break;
+
+    default:
+      print('No Data Found');
   }
 }
 
