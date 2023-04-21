@@ -205,35 +205,6 @@ void main() {
 }
 ```  
 
-## Conditionals - IF/ELSE
-
-- IF statement basically just checks to see if a condition is true then it carry out the instruction inside a set of curlybraces or else it move in to the else part.
-- Different types of Operators [ ==, !=, >, <, >=, <=, &&, ||, ! ] 
-
-__Example__
-
-```ruby
-import 'dart:math';
-
-void main() {
-  loveCalculator();
-}
-
-void loveCalculator() {
-  int loveScore = Random().nextInt(100) + 1;
-
-  print(loveScore);
-
-  if (loveScore > 70) {
-    print('You Love Each Other very much');
-  } else if (loveScore > 50) {
-    print('You Love Each Other');
-  } else {
-    print('You Love Each Other but have to understand');
-  }
-}
-```
-
 ## Operators
 
 - An Operator is a character that represents a specific mathematical or logical action or process.
@@ -352,6 +323,35 @@ void main() {
   print('The Numbers are ${lowerNumber}');
 }
 ```  
+
+## Conditionals - IF/ELSE
+
+- IF statement basically just checks to see if a condition is true then it carry out the instruction inside a set of curlybraces or else it move in to the else part.
+- Different types of Operators [ ==, !=, >, <, >=, <=, &&, ||, ! ] 
+
+__Example__
+
+```ruby
+import 'dart:math';
+
+void main() {
+  loveCalculator();
+}
+
+void loveCalculator() {
+  int loveScore = Random().nextInt(100) + 1;
+
+  print(loveScore);
+
+  if (loveScore > 70) {
+    print('You Love Each Other very much');
+  } else if (loveScore > 50) {
+    print('You Love Each Other');
+  } else {
+    print('You Love Each Other but have to understand');
+  }
+}
+```
 
 ## Enum(Enumeration)
 
