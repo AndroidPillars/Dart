@@ -171,6 +171,47 @@ void main() {
   double c = 10.504343;
   print(c.toStringAsFixed(2));
 }
+```  
+
+## Operators
+
+- An Operator is a character that represents a specific mathematical or logical action or process.
+
+```ruby
+void main() {
+  int a = 1;
+  int b = 2;
+
+  int c = a + b;
+  int d = a * b;
+
+  // TODO For Reminder we can use modulus (or) percentage Operator
+  int e = 10 % 5;
+
+  // TODO Relational Operator (==, !=, >=, <=, >, <)
+
+  // TODO Assignment Operator (=, +=, -=, *=)
+  // TODO Shortcut for a = a * 15
+  a *= 15;
+
+  // TODO Unary Operator (++, --)
+  ++a;
+  a++;
+  b += 1;
+  b -= 1;
+
+  // TODO Logical Operator (&&, ||, !)
+  if (a > 2 && b < 2) {
+    print('The Value is True');
+  }
+
+  // TODO Test Operators (as , is, is!)
+  // TODO as - It is used for typecast.
+  var num = 10;
+  var name = "Hello World";
+  print(num is int);
+  print(name is! String);
+}
 ```
 
 ## Enum(Enumeration)
