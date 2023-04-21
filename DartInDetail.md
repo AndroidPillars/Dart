@@ -153,7 +153,23 @@ void main() {
 
 - Conversion of one Data Type to another Data Type.
 
+__Example__
 
+```ruby
+void main() {
+  // TODO Converting int to String
+  int a = 10;
+  print(a.toString());
+
+  // TODO Converting String to int
+  String b = '10';
+  print(int.parse(b));
+
+  // TODO Converting double to String
+  double c = 10.504343;
+  print(c.toStringAsFixed(2));
+}
+```
 
 ## Enum(Enumeration)
 
