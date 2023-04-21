@@ -125,6 +125,38 @@ void main() {
 }
 ```  
 
+## const vs final
+
+- Both represent immutability and read only.
+- Final keyword will be used to declare run time values.
+- Const keyword will be used to declare compile time values.
+- Variables declared using the const keyword are implicitly final.
+
+__Need to Know,__
+
+- Prefer using const for constant declarations.
+- Const declarations are more hot-reload friendly and allow to use const constructors if an instantiation references this declaration.
+
+__Example__
+
+```ruby
+void main() {
+  // TODO Using final keyword
+  DateTime nowDate = DateTime.now();
+  final int currYear = nowDate.year;
+  print(currYear.toString());
+
+  // TODO final keyword using late
+  late final int mCurrentYear;
+  mCurrentYear = nowDate.year;
+  print(mCurrentYear?.toString());
+
+  // TODO Using const keyword
+  const birthday = "2023/12/25";
+  print(birthday);
+}
+```
+
 ## String Interpolation, concatenation and Type inference
 
 - __Type Inference__ which allows us to declare a variable without explicitly mentioning the data type. 
@@ -173,6 +205,35 @@ void main() {
 }
 ```  
 
+## Conditionals - IF/ELSE
+
+- IF statement basically just checks to see if a condition is true then it carry out the instruction inside a set of curlybraces or else it move in to the else part.
+- Different types of Operators [ ==, !=, >, <, >=, <=, &&, ||, ! ] 
+
+__Example__
+
+```ruby
+import 'dart:math';
+
+void main() {
+  loveCalculator();
+}
+
+void loveCalculator() {
+  int loveScore = Random().nextInt(100) + 1;
+
+  print(loveScore);
+
+  if (loveScore > 70) {
+    print('You Love Each Other very much');
+  } else if (loveScore > 50) {
+    print('You Love Each Other');
+  } else {
+    print('You Love Each Other but have to understand');
+  }
+}
+```
+
 ## Operators
 
 - An Operator is a character that represents a specific mathematical or logical action or process.
@@ -212,7 +273,85 @@ void main() {
   print(num is int);
   print(name is! String);
 }
+```  
+
+## Ternary Operator
+
+- Ternary operator can be used to replace an if..else statement in certain situations.
+- It evaluates and executes a block of code based on the condition.
+
+__Example__
+
+```ruby
+void main() {
+  var myAge = 18;
+
+  // TODO using if,else
+  if (myAge > 18) {
+    print("you are eligible for Marriage");
+  } else {
+    print("you are not eligible for Marriage");
+  }
+
+  // TODO using Ternary Operator
+  (myAge > 18)
+      ? print("you are eligible for Marriage")
+      : print("you are not eligible for Marriage");
+}
+```  
+
+## Null Aware Operators & Null Safety
+
+- Dart provides Null Aware Operators to make us deal with nullable variables.
+- If a variable is null we cannot perform an action and if we do so this may lead to null pointer exception & our application will crash during run-time.
+
+__Example 1__ 
+
+```ruby
+void main() {
+  employeeName();
+}
+
+void employeeName({String? mName}) {
+  if (mName == null) {
+    print('No Employee exists');
+  } else {
+    print('Employee Name is $mName');
+  }
+}
 ```
+
+__Example 2 (Using Null Aware Operators)__ 
+
+```ruby
+void main() {
+  // TODO ? -> If the values is not initialized it returns null during the runtime.
+  String? mValue;
+  print(mValue);
+
+  // TODO late -> If the values is not initialized it throws an exception during the runtime.
+  late String mValueTwo;
+
+  // TODO ?. (Safe Navigation Operator) -> If the values is null it returns null during the runtime.
+  print(mValue?.length);
+
+  // TODO ! -> If the values is null it will throws an exception during the runtime.
+  print(mValue!.length);
+
+  // TODO ?? (Default Operator) -> If the values is null it will set the default keyword during the runtime.
+  print(mValue ?? 'Default keyword');
+
+  // TODO ??= (Fallback Assignment Operator) -> If the values is null it will set the default keyword during the runtime.
+  mValue ??= 'Default keyword';
+  print(mValue);
+
+  // TODO ...? (Operational spread operator) -> If the values is null then it will not add or else it will add during the runtime.
+  List<int> lowerNumber = [1, 2, 3, 4, 5];
+  List<int>? upperNumbers;
+  lowerNumber = [...?lowerNumber, ...?upperNumbers];
+  print('The Numbers are ${lowerNumber}');
+}
+```  
 
 ## Enum(Enumeration)
 
@@ -241,63 +380,6 @@ void main() {
 }
 
 enum Gender { male, female }
-```
-
-## Ternary Operator
-
-- Ternary operator can be used to replace an if..else statement in certain situations.
-- It evaluates and executes a block of code based on the condition.
-
-__Example__
-
-```ruby
-void main() {
-  var myAge = 18;
-
-  // TODO using if,else
-  if (myAge > 18) {
-    print("you are eligible for Marriage");
-  } else {
-    print("you are not eligible for Marriage");
-  }
-
-  // TODO using Ternary Operator
-  (myAge > 18)
-      ? print("you are eligible for Marriage")
-      : print("you are not eligible for Marriage");
-}
-```
-
-## const vs final
-
-- Both represent immutability and read only.
-- Final keyword will be used to declare run time values.
-- Const keyword will be used to declare compile time values.
-- Variables declared using the const keyword are implicitly final.
-
-__Need to Know,__
-
-- Prefer using const for constant declarations.
-- Const declarations are more hot-reload friendly and allow to use const constructors if an instantiation references this declaration.
-
-__Example__
-
-```ruby
-void main() {
-  // TODO Using final keyword
-  DateTime nowDate = DateTime.now();
-  final int currYear = nowDate.year;
-  print(currYear.toString());
-
-  // TODO final keyword using late
-  late final int mCurrentYear;
-  mCurrentYear = nowDate.year;
-  print(mCurrentYear?.toString());
-
-  // TODO Using const keyword
-  const birthday = "2023/12/25";
-  print(birthday);
-}
 ```
 
 ## Higher Order Function
@@ -511,88 +593,6 @@ void validateAge(int age) {
   }
 }
 ```  
-
-## Null Aware Operators & Null Safety
-
-- Dart provides Null Aware Operators to make us deal with nullable variables.
-- If a variable is null we cannot perform an action and if we do so this may lead to null pointer exception & our application will crash during run-time.
-
-__Example 1__ 
-
-```ruby
-void main() {
-  employeeName();
-}
-
-void employeeName({String? mName}) {
-  if (mName == null) {
-    print('No Employee exists');
-  } else {
-    print('Employee Name is $mName');
-  }
-}
-```
-
-__Example 2 (Using Null Aware Operators)__ 
-
-```ruby
-void main() {
-  // TODO ? -> If the values is not initialized it returns null during the runtime.
-  String? mValue;
-  print(mValue);
-
-  // TODO late -> If the values is not initialized it throws an exception during the runtime.
-  late String mValueTwo;
-
-  // TODO ?. (Safe Navigation Operator) -> If the values is null it returns null during the runtime.
-  print(mValue?.length);
-
-  // TODO ! -> If the values is null it will throws an exception during the runtime.
-  print(mValue!.length);
-
-  // TODO ?? (Default Operator) -> If the values is null it will set the default keyword during the runtime.
-  print(mValue ?? 'Default keyword');
-
-  // TODO ??= (Fallback Assignment Operator) -> If the values is null it will set the default keyword during the runtime.
-  mValue ??= 'Default keyword';
-  print(mValue);
-
-  // TODO ...? (Operational spread operator) -> If the values is null then it will not add or else it will add during the runtime.
-  List<int> lowerNumber = [1, 2, 3, 4, 5];
-  List<int>? upperNumbers;
-  lowerNumber = [...?lowerNumber, ...?upperNumbers];
-  print('The Numbers are ${lowerNumber}');
-}
-```  
-
-## Conditionals - IF/ELSE
-
-- IF statement basically just checks to see if a condition is true then it carry out the instruction inside a set of curlybraces or else it move in to the else part.
-- Different types of Operators [ ==, !=, >, <, >=, <=, &&, ||, ! ] 
-
-__Example__
-
-```ruby
-import 'dart:math';
-
-void main() {
-  loveCalculator();
-}
-
-void loveCalculator() {
-  int loveScore = Random().nextInt(100) + 1;
-
-  print(loveScore);
-
-  if (loveScore > 70) {
-    print('You Love Each Other very much');
-  } else if (loveScore > 50) {
-    print('You Love Each Other');
-  } else {
-    print('You Love Each Other but have to understand');
-  }
-}
-```
 
 ## Classes and Objects
 
