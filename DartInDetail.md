@@ -79,6 +79,8 @@ __Example__
 void main() {
   // TODO var keyword is the Type inference.
   var myName = 'Android';
+
+  print(myName.runtimeType);
 }
 ```  
 
