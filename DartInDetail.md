@@ -695,7 +695,6 @@ class PrivateBank extends Banks {
 
 - A Function is a block of organized, reusable code that is used to perform some action.
 - __Anonymous Function__ is just a Function just as its name implies it has no name.
-- Functions with No Parameters.
 - Parameter Types - Positional Paramter, Optional Positional Parameter, Named Parameter
 - By using Positional Parameter we can't skip or interchange the Parameters.
 - By using Optional Positional Parameter we can skip the parameter but we can't interchange the Parameters.
@@ -722,7 +721,7 @@ int addTwoNumbers(int a, int b) {
 }
 ```
 
-__Example 2 (Anonymous Function)__
+__Example 3 (Anonymous Function)__
 
 ```ruby
 onPressed: (){
@@ -738,7 +737,7 @@ bool methodNameTwo(int mValueOne, int mValueTwo) {
 }
 ```
 
-__Example 4 (Named Function Using Optional Positional Parameters)__
+__Example 5 (Named Function Using Optional Positional Parameters)__
 
 ```ruby
 void main() {
@@ -750,7 +749,7 @@ int methodNameThree(int mValueOne, [String? mValueTwo]) {
 }
 ```
 
-__Example 5 (Named Function Using Named Parameters)__
+__Example 6 (Named Function Using Named Parameters)__
 
 ```ruby
 void main() {
