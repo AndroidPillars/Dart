@@ -775,6 +775,18 @@ void main() {
     print(mList[i]);
   }
 }
+```  
+
+## For-In Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  for (var n in mList) {
+    print(n);
+  }
+}
 ```
 
 ## For-Each
