@@ -610,22 +610,27 @@ void main() {
 }
 ```
 
+## Collections 
+
 ## List
 
 - Dart represents arrays in the form of List objects.
 - A List is simply an ordered group of objects. 
 
-__Example__
+__Example 1__
 
 ```ruby
 void main() {
   var mList = ['Android', 'Flutter', 'IOS'];
 
+  // TODO By using const it makes the List immutable
+  var mListOne = const ['Android', 'Flutter', 'IOS'];
+
   // TODO Using Standard For Loop
   for (int i = 0; i < mList.length; i++) {
     print(mList[i]);
   }
-  
+
   // TODO For getting the index Value
   print(mList.indexOf('Android'));
   // TODO For adding an item
@@ -636,6 +641,22 @@ void main() {
   // TODO Using For...In in Loop
   for (String mStringValues in mList) {
     print(mStringValues);
+  }
+}
+```
+
+__Example 2__
+
+```ruby
+void main() {
+  var mList = ['Android', 'Flutter', 'IOS'];
+
+  // TODO Simply copying the mList using the Spread Operator to mListOne
+  var mListOne = [...mList];
+
+  // TODO Using Standard For Loop
+  for (int i = 0; i < mListOne.length; i++) {
+    print(mList[i]);
   }
 }
 ```
