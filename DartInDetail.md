@@ -691,7 +691,7 @@ class PrivateBank extends Banks {
 }
 ```
 
-## Function
+## Functions
 
 - A Function is a block of organized, reusable code that is used to perform some action.
 - __Anonymous Function__ is just a Function just as its name implies it has no name.
@@ -760,3 +760,21 @@ int? methodNameThree({int? mValueOne, String? mValueTwo}) {
   return mValueOne;
 }
 ```  
+
+## Arrow Function
+
+- A fat arrow is used to define a single expression in a function. 
+
+__Example 1 (Using Regular Function)__
+
+```ruby
+int sum(int x, int y) {
+  return x + y;
+}
+```  
+
+__Example 2 (Using Arrow Function)__
+
+```ruby
+int sum(int x, int y) => x + y;
+```
