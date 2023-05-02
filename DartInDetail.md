@@ -509,6 +509,107 @@ void fastDrive() {
 }
 ```  
 
+## Loops
+
+## For Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4];
+
+  // TODO Using Standard For Loop
+  for (int i = 0; i < mList.length; i++) {
+    print(mList[i]);
+  }
+}
+```  
+
+## For-In Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  for (var n in mList) {
+    print(n);
+  }
+}
+```
+
+## For-Each
+
+- forEach Loop is an Higher Order Function because it takes anonether function as a parameter.
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4];
+
+  // TODO Using Arrow Function
+  mList.forEach((element) => print(element));
+
+  // TODO Using Normal Function
+  mList.forEach((element) {
+    print(element);
+  });
+}
+```
+
+## While Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  int i = 0;
+  while (i < mList.length) {
+    print(i);
+    i++;
+  }
+}
+```
+
+## DO-While Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  int i = 0;
+
+  do {
+    print(i);
+    i++;
+  } while (i < mList.length);
+}
+```
+
+## Break
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  for (int i = 0; i < 5; i++) {
+    if (i == 3) break;
+    print(mList[i]);
+  }
+}
+```
+
+## Continue
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  // TODO Using Standard For Loop
+  for (int i = 0; i < mList.length; i++) {
+    if (i % 2 == 0) continue;
+    print(mList[i]);
+  }
+}
+```
+
 ## List
 
 - Dart represents arrays in the form of List objects.
@@ -760,68 +861,6 @@ class PrivateBank extends Banks {
   String minimalWithdrawal() => 'Minimal withdrawal is 500';
 }
 ```
-
-
-## Loops
-
-## For Loop
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4];
-
-  // TODO Using Standard For Loop
-  for (int i = 0; i < mList.length; i++) {
-    print(mList[i]);
-  }
-}
-```  
-
-## For-In Loop
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4, 5];
-
-  for (var n in mList) {
-    print(n);
-  }
-}
-```
-
-## For-Each
-
-- forEach Loop is an Higher Order Function because it takes anonether function as a parameter.
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4];
-
-  // TODO Using Arrow Function
-  mList.forEach((element) => print(element));
-
-  // TODO Using Normal Function
-  mList.forEach((element) {
-    print(element);
-  });
-}
-```
-
-## break
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4, 5];
-
-  for (int i = 0; i < 5; i++) {
-    if (i == 3) break;
-    print(mList[i]);
-  }
-}
-```
-
-## While Loop
-## doWhile Loop
 
 
 ## Extras
