@@ -1,21 +1,3 @@
-## Difference Between Static and Dynamic Typed Language
-
-- The statically typed languages are those which check the variable types during compile time including languages like C, C++, Java, Swift, and Kotlin.
-- In Static programming languages, data types are known and checked during the compile time itself. 
-- But in Dynamic programming languages data types are checked only at the run-time including languages like JS, Python R.
-- Now coming to Dart, It is a Statically typed programming language.
-- Dart also offers a dynamic variable that is checked during the runtime, also you can store any type of data in dynamic at runtime.
-- Now we can say that Dart is a statically typed language with the perk of dynamically typed programming languages. 
-- Mean Dart is an optionally typed programming language that offers both static and dynamic.
-
-## JIT(Just-In-Time) VS AOT(Ahead-of-Time)  
-
-- __JIT compiler__ converts program source code into native machine code just before program execution. 
-- It can be used to improve performance speed and improve application runtime.
-- __AOT compiler__ works by compiling your code before it is delivered to whatever runtime environment runs the code. 
-- The __AOT compiler__ is typically used when the app is ready to be deployed to either an appstore or an in-house production backend.
-- The major difference that exists between Ahead-Of-Time and Just-In-Time compilation is the time in which the compilation happens.
-
 ## Dart
 
 - It is a open source and powerful language very similar to Oops.
@@ -803,3 +785,24 @@ void main() {
 ## While Loop
 ## doWhile Loop
 ## break
+
+## Extras
+
+## Difference Between Static and Dynamic Typed Language
+
+- The statically typed languages are those which check the variable types during compile time including languages like C, C++, Java, Swift, and Kotlin.
+- In Static programming languages, data types are known and checked during the compile time itself. 
+- But in Dynamic programming languages data types are checked only at the run-time including languages like JS, Python R.
+- Now coming to Dart, It is a Statically typed programming language.
+- Dart also offers a dynamic variable that is checked during the runtime, also you can store any type of data in dynamic at runtime.
+- Now we can say that Dart is a statically typed language with the perk of dynamically typed programming languages. 
+- Mean Dart is an optionally typed programming language that offers both static and dynamic.
+
+## JIT(Just-In-Time) VS AOT(Ahead-of-Time)  
+
+- __JIT compiler__ converts program source code into native machine code just before program execution. 
+- It can be used to improve performance speed and improve application runtime.
+- __AOT compiler__ works by compiling your code before it is delivered to whatever runtime environment runs the code. 
+- The __AOT compiler__ is typically used when the app is ready to be deployed to either an appstore or an in-house production backend.
+- The major difference that exists between Ahead-Of-Time and Just-In-Time compilation is the time in which the compilation happens.
+
