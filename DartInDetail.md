@@ -764,7 +764,20 @@ class PrivateBank extends Banks {
 
 ## Loops
 
-## forEach
+## For Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4];
+
+  // TODO Using Standard For Loop
+  for (int i = 0; i < mList.length; i++) {
+    print(mList[i]);
+  }
+}
+```
+
+## For-Each
 
 - forEach Loop is an Higher Order Function because it takes anonether function as a parameter.
 
