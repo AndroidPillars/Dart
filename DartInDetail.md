@@ -450,7 +450,7 @@ __Example__
 void main() {
   var mList = ['Android', 'Flutter', 'IOS'];
 
-  // TODO Using For in Loop
+  // TODO Using Standard For Loop
   for (int i = 0; i < mList.length; i++) {
     print(mList[i]);
   }
