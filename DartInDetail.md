@@ -370,6 +370,7 @@ enum Gender { male, female }
 ## Functions
 
 - A Function is a block of organized, reusable code that is used to perform some action.
+- In Dart Programming Language, each Function is an object of Class Function.
 - __Anonymous Function__ is just a Function just as its name implies it has no name.
 - Parameter Types - Positional Paramter, Optional Positional Parameter, Named Parameter
 - By using Positional Parameter we can't skip or interchange the Parameters.
