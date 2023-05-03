@@ -438,6 +438,22 @@ int? methodNameThree({int? mValueOne, String? mValueTwo}) {
 }
 ```  
 
+__Example 7 (Dynamic Return Type)__
+
+```ruby
+void main() {
+  methodNameOne(methodNameTwo(1, 2));
+}
+
+void methodNameOne(var msg) {
+  print(msg);
+}
+
+dynamic methodNameTwo(var a, var b) {
+  return a + b;
+}
+```
+
 ## Arrow Function
 
 - A fat arrow is used to define a single expression in a function. 
