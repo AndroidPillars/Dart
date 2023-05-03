@@ -659,7 +659,24 @@ void main() {
     print(mList[i]);
   }
 }
-```
+```  
+
+## Set
+
+- It is an unordered collection of unique items.
+
+__Example__
+
+```ruby
+void main() {
+  var mList = {'Android', 'Flutter', 'IOS', 'Android'};
+
+  // TODO Using Standard For Loop
+  for (String mListValues in mList) {
+    print(mListValues);
+  }
+}
+```  
 
 ## Maps
 
