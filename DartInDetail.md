@@ -401,6 +401,16 @@ int addTwoNumbers(int a, int b) {
 __Example 3 (Anonymous Function)__
 
 ```ruby
+void main() {
+  var mList = {'Android', 'Flutter', 'IOS', 'Android'};
+  
+  mList.forEach((element) {
+    print(element);
+  });
+}
+```
+
+```ruby
 onPressed: (){
 //TODO Something
 }
