@@ -448,7 +448,18 @@ int? methodNameThree({int? mValueOne, String? mValueTwo}) {
 }
 ```  
 
-__Example 7 (Dynamic Return Type)__
+__Example 7 (Named Function Using Named Parameters and Default Value)__
+
+```ruby
+main() {
+  print(methodNameThree(mValueOne: 1));
+}
+
+int methodNameThree({required int mValueOne, int mValueTwo = 0}) =>
+    mValueOne + mValueTwo;
+```
+
+__Example 8 (Dynamic Return Type)__
 
 ```ruby
 void main() {
