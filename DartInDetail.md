@@ -565,7 +565,7 @@ void main() {
 
 ## For-Each
 
-- forEach Loop is an Higher Order Function because it takes anonether function as a parameter.
+- forEach Loop is an Higher Order Function because it takes anonther function as a parameter.
 
 ```ruby
 void main() {
