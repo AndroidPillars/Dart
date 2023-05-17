@@ -119,7 +119,7 @@ __Need to Know,__
 - Prefer using const for constant declarations.
 - Const declarations are more hot-reload friendly and allow to use const constructors if an instantiation references this declaration.
 
-__Example__
+__Example 1__
 
 ```ruby
 void main() {
@@ -136,6 +136,29 @@ void main() {
   // TODO Using const keyword
   const birthday = "2023/12/25";
   print(birthday);
+}
+``` 
+
+__Example 2__
+
+```ruby
+void main() {
+  // TODO The Below Line defines the Object
+  Car myCar = Car("Hyundai");
+
+  // TODO Where myCar.mName is the Object Property and Car.mType is the Class Property
+  print('Company is ${myCar.mName} and the Car Type is ${Car.mType}');
+}
+
+class Car {
+  // TODO final keyword with in a class we can change it using the Constructor so this will be possible at runtime
+  final String? mName;
+
+  // TODO Const will not be changed at any time.
+  static const String mType = "Hatchback";
+
+  // TODO Alternative way of using Constructor
+  Car(this.mName);
 }
 ```
 
@@ -903,6 +926,7 @@ class Car {
   // }
 
   // TODO Alternative way of using Constructor
+  // this - means the instance which it is called
   Car(this.mName, [this.mType = "Hatchback"]);
 
   // TODO Using Named Constructor
