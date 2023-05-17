@@ -3,7 +3,10 @@
 | S.No | Content |
 | --------	 | ------------ |
 | 1 | [Dart](DartInDetail.md#dart) |
-| 2 | [Dart - Entry Point](DartInDetail.md#dart---entry-point) |
+| 2 | [Dart - Entry Point](DartInDetail.md#dart---entry-point) |  
+| 3 | [Adding Comment Line](DartInDetail.md#adding-comment-line) |
+| 4 | [Variables](DartInDetail.md#variables) |
+| 5 | [Data Types](DartInDetail.md#data-types) |
 
 ## Dart
 
