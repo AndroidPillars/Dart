@@ -869,6 +869,54 @@ class Car {
     print('wheels start turning');
   }
 }
+```  
+
+## Constructor
+
+- Constructor is a block of code which is called when an instance of the class is created.
+- At the time of calling the constructor, memory for the object is allocated in the memory.
+- It doesn’t have a return type.
+- It calls a default constructor if there is no constructor available in the class.
+
+__Example__
+
+```ruby
+void main() {
+  // TODO The Below Line defines the Object
+  Car myCar = Car("Hyundai", "SUV");
+  myCar.drive();
+
+  Car mOffers = Car.Offers();
+  mOffers.drive();
+}
+
+class Car {
+  // TODO numberOfDoors is the Variable (i.e.) Properties
+  int numberOfDoors = 5;
+  String? mName;
+  String? mType;
+
+  // TODO Constructor
+  // Car(String mName, [String mType = "Hatchback"]) {
+  //   this.mName = mName;
+  //   this.mType = mType;
+  // }
+
+  // TODO Alternative way of using Constructor
+  Car(this.mName, [this.mType = "Hatchback"]);
+
+  // TODO Using Named Constructor
+  Car.Offers() {
+    mName = "Tata";
+    mType = "SUV";
+  }
+
+  // TODO drive is the Method
+  void drive() {
+    print('wheels start turning');
+    print('Company is $mName and the Car Type is $mType');
+  }
+}
 ```
 
 ## Encapsulation
