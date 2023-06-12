@@ -5,7 +5,7 @@
 | 1 | [Key - Points](DartInDetail.md#key---points) |
 | 2 | [Dart](DartInDetail.md#dart) |
 | 3 | [Dart - Entry Point](DartInDetail.md#dart---entry-point) |  
-| 4 | [Adding Comment Line](DartInDetail.md#adding-comment-line) |
+| 4 | [Comments](DartInDetail.md#Comments) |
 | 5 | [Variables](DartInDetail.md#variables) |
 | 6 | [Data Types](DartInDetail.md#data-types) |  
 | 7 | [Const vs Final](DartInDetail.md#const-vs-final) |  
@@ -62,11 +62,10 @@ void main() {
 ```  
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)
 
-## Adding Comment Line
+## Comments
 
-- A comment is an explanation or description of the source code of the program.
-- Generally Comment makes the program easier to read and understand.
-- These are the statements that are not executed by the compiler or an interpreter.
+- Comments are the set of statements that are ignored by the dart compiler during program execution. 
+- They are used to explain the code so that you or other people can understand it easily.
 - Type -> In-line Comment, Block Comment and Documentation.
 
 __Example__
@@ -79,7 +78,7 @@ void main() {
    TODO - This is the Block Comment Line which will be used for Multiple Line Comment.
    */
 
-  /// TODO - For Documentation
+  /// TODO - This is For Documentation
 
   print("Hello World");
 }
