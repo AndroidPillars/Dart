@@ -22,7 +22,9 @@
 - It is a open source and powerful language very similar to Oops.
 - It is a Statically typed programming language (i.e.) If we define a variable as String, We cannot assign other Values like Int, Bool, etc.. 
 - Dart also supports a dynamic variable that is checked during the runtime.
-- It is also a compiled programming Language (i.e.) It supports Two Types of Compilation -> AOT(Ahead of Time during Development time) and JIT(Just in Time during Production Mode)
+- It is also a compiled programming Language (i.e.) It supports Two Types of Compilation -> AOT(Ahead of Time during Development time) and JIT(Just in Time during Production Mode)  
+
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)
 
 ## Dart - Entry Point
 
@@ -50,6 +52,7 @@ void main() {
   World""");
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)
 
 ## Adding Comment Line
 
@@ -73,6 +76,7 @@ void main() {
   print("Hello World");
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Variables
 
@@ -88,6 +92,7 @@ void main() {
   print(myName.runtimeType);
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Data Types
 
@@ -129,6 +134,7 @@ void main() {
   print(c);
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## const vs final
 
@@ -185,6 +191,8 @@ class Car {
 }
 ```
 
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
+
 ## String Interpolation, concatenation and Type inference
 
 - __Type Inference__ which allows us to declare a variable without explicitly mentioning the data type. 
@@ -210,6 +218,7 @@ void main() {
   
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Type Conversion
 
@@ -232,6 +241,7 @@ void main() {
   print(c.toStringAsFixed(2));
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Operators
 
@@ -273,6 +283,7 @@ void main() {
   print(name is! String);
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Ternary Operator
 
@@ -298,6 +309,7 @@ void main() {
       : print("you are not eligible for Marriage");
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Type Test Operator
 
@@ -320,6 +332,7 @@ void main() {
 
 }
 ```
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Null Aware Operators & Null Safety
 
@@ -373,6 +386,7 @@ void main() {
   print('The Numbers are ${lowerNumber}');
 }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Conditionals - IF/ELSE
 
@@ -402,6 +416,7 @@ void loveCalculator() {
   }
 }
 ```
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Enum(Enumeration) using Switch Case
 
@@ -434,6 +449,7 @@ void main() {
 
 enum Gender { male, female }
 ```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Functions
 
