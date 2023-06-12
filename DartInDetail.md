@@ -298,15 +298,21 @@ void main() {
     // TODO using Increment and Decrement Operator includes ++var, --var, var++, var--
     // TODO ++var increases the value of operands, whereas var++ returns the actual value of operands before the increment.
 
+    // TODO Post Increment (i.e.) Increase Value By 1. var = var + 1 (i.e.) a++ -> a = a + 1;
+    // TODO First it will print and then increment the Value.
     a++;
     print(a);
 
+    // TODO Post Increment.
     b--;
     print(b);
 
+    // TODO Pre Increment
+    // TODO First it will increment the Value and then it will print.
     ++c;
     print(c);
 
+    // TODO Pre Increment
     ++d;
     print(d);
 
