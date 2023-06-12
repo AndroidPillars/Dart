@@ -484,7 +484,9 @@ void main() {
 ```  
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
-## Conditions
+## Conditions & Loops
+
+## Conditions 
 
 -  By using the conditions, you can control the flow of the dart program. 
 -  Suppose you need to execute a specific code when a particular situation is true.
@@ -505,6 +507,34 @@ void main() {
     } else {
         print('You Love Each Other but have to understand');
     }
+}
+```
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
+
+## Switch Case
+
+- A Switch case is used to execute the code block based on the condition.  
+
+__Example__
+
+```ruby
+void main() {
+  const weather = "cloudy";
+
+  switch (weather) {
+    case "sunny":
+      print("It's a sunny day.");
+      break;
+    case "cloudy":
+      print("It's a cloudy day.");
+      break;
+    case "rainy":
+      print("It's a rainy day.");
+      break;
+    default:
+      print("No Results Found.");
+      break;
+  }
 }
 ```
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
