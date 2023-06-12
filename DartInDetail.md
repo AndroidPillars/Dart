@@ -319,7 +319,35 @@ void main() {
 }
 ```
 
-__Example__
+__Example (Assignment Operator)__ 
+
+```ruby
+void main() {
+
+    // TODO Assigning value to a Variable
+    int a = 10;
+    int b = 20;
+    int c = 30;
+    double d = 40;
+
+    // TODO Adding a Value to a Variable -> a += 5 (i.e.) age = age + 5
+    a += 5;
+    print(a);
+
+    // TODO Subtracting a Value to a Variable
+    b -= 10;
+    print(b);
+
+    // TODO Multiplying a Value to a Variable
+    c *= 15;
+    print(c);
+
+    // TODO Dividing a Value to a Variable
+    d /= 20;
+    print(d);
+
+}
+```
 
 ```ruby
 void main() {
