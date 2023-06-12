@@ -403,33 +403,6 @@ void main() {
 ```
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
-## Ternary Operator
-
-- Ternary operator can be used to replace an if..else statement in certain situations.
-- It evaluates and executes a block of code based on the condition.
-
-__Example__
-
-```ruby
-void main() {
-  var myAge = 18;
-
-  // TODO using if,else
-  if (myAge > 18) {
-    print("you are eligible for Marriage");
-  } else {
-    print("you are not eligible for Marriage");
-  }
-
-  // TODO using Ternary Operator
-  (myAge > 18)
-      ? print("you are eligible for Marriage")
-      : print("you are not eligible for Marriage");
-}
-```  
-:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
-
-
 ## Null Aware Operators & Null Safety
 
 - Dart provides Null Aware Operators to make us deal with nullable variables.
@@ -537,6 +510,51 @@ void main() {
   }
 }
 ```
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
+
+## Assert
+
+- Dart provide a assert method to check for the error. 
+- It takes conditions as an argument. 
+- If the condition is true, nothing happens but incase a condition is false, it will raise an error. 
+
+__Example__
+
+```ruby
+void main() {
+    var myAge = 25;
+
+    assert(myAge != 25);
+
+    // TODO We can also use assert with a custom message.
+    assert(myAge!=25, "My age is not 25");
+}
+```  
+
+## Ternary Operator
+
+- Ternary operator can be used to replace an if..else statement in certain situations.
+- It evaluates and executes a block of code based on the condition.
+
+__Example__
+
+```ruby
+void main() {
+  var myAge = 18;
+
+  // TODO using if,else
+  if (myAge > 18) {
+    print("you are eligible for Marriage");
+  } else {
+    print("you are not eligible for Marriage");
+  }
+
+  // TODO using Ternary Operator
+  (myAge > 18)
+      ? print("you are eligible for Marriage")
+      : print("you are not eligible for Marriage");
+}
+```  
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Enum(Enumeration) using Switch Case
