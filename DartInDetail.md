@@ -296,6 +296,28 @@ void main() {
 }
 ```  
 
+## Type Test Operator
+
+- We can use this in dart code to check the type or set the typecast in dart using as, is and is!.
+
+__Example__
+
+```ruby
+void main() {
+    String number = "1";
+    // TODO checking data type of number
+    if(number is int) {
+        int test = number as int;
+        print(test);
+    }
+
+    if(number is! int) {
+        print(number);
+    }
+
+}
+```
+
 ## Null Aware Operators & Null Safety
 
 - Dart provides Null Aware Operators to make us deal with nullable variables.
