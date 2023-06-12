@@ -12,6 +12,7 @@
 ## Need to Know
 
 - Current Dart Version as on 10 May 2023 -> Dart 3.0 
+- Editor -> Android Studio, Visual Studio Code and DartPad.
 
 ## Dart
 
