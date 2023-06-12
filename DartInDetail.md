@@ -7,8 +7,16 @@
 | 3 | [Dart - Entry Point](DartInDetail.md#dart---entry-point) |  
 | 4 | [Adding Comment Line](DartInDetail.md#adding-comment-line) |
 | 5 | [Variables](DartInDetail.md#variables) |
-| 6 | [Data Types](DartInDetail.md#data-types) |
-
+| 6 | [Data Types](DartInDetail.md#data-types) |  
+| 7 | [Const vs Final](DartInDetail.md#const-vs-final) |  
+| 8 | [String Interpolation, concatenation and Type inference](DartInDetail.md#string-interpolation-concatenation-and-type-inference) |  
+| 9 | [Type Conversion](DartInDetail.md#type-conversion) |  
+| 10 | [Operators](DartInDetail.md#operators) |  
+| 11 | [Ternary Operator](DartInDetail.md#ternary-operator) |  
+| 12 | [Type Test Operator](DartInDetail.md#type-test-operator) |  
+| 13 | [DartInDetail.md#type-test-operator](DartInDetail.md#null-aware-operators--null-safety) |  
+| 14 | [DartInDetail.md#null-aware-operators--null-safety](DartInDetail.md#conditionals---ifelse) |  
+| 15 | [Enum(Enumeration) using Switch Case](DartInDetail.md#enumenumeration-using-switch-case) |  
 
 ## Key - Points
 
@@ -136,7 +144,7 @@ void main() {
 ```  
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
-## const vs final
+## Const vs Final
 
 - Both represent immutability and read only.
 - Final keyword will be used to declare run time values.
