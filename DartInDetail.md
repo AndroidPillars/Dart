@@ -350,42 +350,58 @@ void main() {
 }
 ```
 
+__Example (Relational Operator)__  
+
 ```ruby
 void main() {
-  int a = 1;
-  int b = 2;
 
-  int c = a + b;
-  int d = a * b;
+    // TODO using Relational Operators includes ==, >, <, >=, <=, !=
+    int a = 10;
+    int b = 20;
 
-  // TODO For Reminder we can use modulus (or) percentage Operator
-  int e = 10 % 5;
+    print(a == b);
+    print(a > b);
+    print(a < b);
+    print(a >= b);
+    print(a <= b);
 
-  // TODO Relational Operator (==, !=, >=, <=, >, <)
-
-  // TODO Assignment Operator (=, +=, -=, *=)
-  // TODO Shortcut for a = a * 15
-  a *= 15;
-
-  // TODO Unary Operator (++, --)
-  ++a;
-  a++;
-  b += 1;
-  b -= 1;
-
-  // TODO Logical Operator (&&, ||, !)
-  if (a > 2 && b < 2) {
-    print('The Value is True');
-  }
-
-  // TODO Test Operators (as , is, is!)
-  // TODO as - It is used for typecast.
-  var num = 10;
-  var name = "Hello World";
-  print(num is int);
-  print(name is! String);
 }
 ```  
+
+__Example (Logical Operator)__  
+
+```ruby
+void main() {
+
+    // TODO using Logical Operators includes &&, ||, !
+    int a = 10;
+    int b = 20;
+
+    print(a == b && a > b);
+    print(a > b || a < b);
+    print(a > b != a < b);
+
+}
+```  
+
+__Example (Type Test Operators)__  
+
+- We can use this in dart code to check the type or set the typecast in dart using as, is and is!.
+
+```ruby
+void main() {
+
+    // TODO using Type Test Operators includes is, is!
+    var value1 = "Dart Tutorial" as String;
+    int age = 10;
+
+    // TODO is -> Gives boolean value true if the object has a specific type
+    print(value1 is String);
+    // TODO is! -> Gives boolean value false if the object has a specific type
+    print(age is! int);
+
+}
+```
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Ternary Operator
@@ -414,28 +430,6 @@ void main() {
 ```  
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
-## Type Test Operator
-
-- We can use this in dart code to check the type or set the typecast in dart using as, is and is!.
-
-__Example__
-
-```ruby
-void main() {
-    String number = "1";
-    // TODO checking data type of number
-    if(number is int) {
-        int test = number as int;
-        print(test);
-    }
-
-    if(number is! int) {
-        print(number);
-    }
-
-}
-```
-:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
 ## Null Aware Operators & Null Safety
 
