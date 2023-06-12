@@ -8,6 +8,11 @@
 | 4 | [Variables](DartInDetail.md#variables) |
 | 5 | [Data Types](DartInDetail.md#data-types) |
 
+
+## Need to Know
+
+- Current Dart Version as on 10 May 2023 -> Dart 3.0 
+
 ## Dart
 
 - It is a open source and powerful language very similar to Oops.
