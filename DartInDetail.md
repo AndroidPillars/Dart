@@ -557,6 +557,110 @@ void main() {
 ```  
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
+## Loops
+
+- loops are used to repeat a block of code until certain conditions are not completed.
+- Types -> For Loop, For-In Loop, For-Each, While Loop, DO-While Loop.
+
+## For Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4];
+
+  // TODO Using Standard For Loop
+  for (int i = 0; i < mList.length; i++) {
+    print(mList[i]);
+  }
+}
+```  
+
+## For-In Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  for (var n in mList) {
+    print(n);
+  }
+}
+```
+
+## For-Each
+
+- forEach Loop is an Higher Order Function because it takes anonther function as a parameter.
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4];
+
+  // TODO Using Arrow Function
+  mList.forEach((element) => print(element));
+
+  // TODO Using Normal Function
+  mList.forEach((element) {
+    print(element);
+  });
+}
+```
+
+## While Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  int i = 0;
+  while (i < mList.length) {
+    print(i);
+    i++;
+  }
+}
+```
+
+## DO-While Loop
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  int i = 0;
+
+  do {
+    print(i);
+    i++;
+  } while (i < mList.length);
+}
+```
+
+## Break
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  for (int i = 0; i < 5; i++) {
+    if (i == 3) break;
+    print(mList[i]);
+  }
+}
+```
+
+## Continue
+
+```ruby
+void main() {
+  var mList = [1, 2, 3, 4, 5];
+
+  // TODO Using Standard For Loop
+  for (int i = 0; i < mList.length; i++) {
+    if (i % 2 == 0) continue;
+    print(mList[i]);
+  }
+}
+```
+
 ## Enum(Enumeration) using Switch Case
 
 - It is just a data type that contains some fixed set of constants which is declared using the keyword enum. 
@@ -769,107 +873,6 @@ void fastDrive() {
   print('The Car is driving Fastly');
 }
 ```  
-
-## Loops
-
-## For Loop
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4];
-
-  // TODO Using Standard For Loop
-  for (int i = 0; i < mList.length; i++) {
-    print(mList[i]);
-  }
-}
-```  
-
-## For-In Loop
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4, 5];
-
-  for (var n in mList) {
-    print(n);
-  }
-}
-```
-
-## For-Each
-
-- forEach Loop is an Higher Order Function because it takes anonther function as a parameter.
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4];
-
-  // TODO Using Arrow Function
-  mList.forEach((element) => print(element));
-
-  // TODO Using Normal Function
-  mList.forEach((element) {
-    print(element);
-  });
-}
-```
-
-## While Loop
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4, 5];
-
-  int i = 0;
-  while (i < mList.length) {
-    print(i);
-    i++;
-  }
-}
-```
-
-## DO-While Loop
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4, 5];
-
-  int i = 0;
-
-  do {
-    print(i);
-    i++;
-  } while (i < mList.length);
-}
-```
-
-## Break
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4, 5];
-
-  for (int i = 0; i < 5; i++) {
-    if (i == 3) break;
-    print(mList[i]);
-  }
-}
-```
-
-## Continue
-
-```ruby
-void main() {
-  var mList = [1, 2, 3, 4, 5];
-
-  // TODO Using Standard For Loop
-  for (int i = 0; i < mList.length; i++) {
-    if (i % 2 == 0) continue;
-    print(mList[i]);
-  }
-}
-```
 
 ## Collections 
 
