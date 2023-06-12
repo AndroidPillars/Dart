@@ -400,7 +400,7 @@ void loveCalculator() {
 }
 ```
 
-## Enum(Enumeration)
+## Enum(Enumeration) using Switch Case
 
 - It is just a data type that contains some fixed set of constants which is declared using the keyword enum. 
 - When we require a predefined set of values which represents some kind of data, we use enum. 
