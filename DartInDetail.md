@@ -257,7 +257,7 @@ void main() {
 - The Word 'Operator' represents how the operands will be processed to produce a value.
 - Types -> Arithmetic Operators, Increment and Decrement Operators, Assignment Operators, Logical Operators and Type Test Operators.
 
-__Example (Arithmetic Operators)__
+__Example_1 (Arithmetic Operators)__
 
 ```ruby
 void main() {
@@ -285,7 +285,7 @@ void main() {
 }
 ``` 
 
-__Example (Increment and Decrement Operators or Unary Operators)__ 
+__Example_2 (Increment and Decrement Operators or Unary Operators)__ 
 
 ```ruby
 void main() {
@@ -318,7 +318,7 @@ void main() {
 }
 ```
 
-__Example (Assignment Operator)__ 
+__Example_3 (Assignment Operator)__ 
 
 ```ruby
 void main() {
@@ -349,7 +349,7 @@ void main() {
 }
 ```
 
-__Example (Relational Operator)__  
+__Example_4 (Relational Operator)__  
 
 ```ruby
 void main() {
@@ -367,7 +367,7 @@ void main() {
 }
 ```  
 
-__Example (Logical Operator)__  
+__Example_5 (Logical Operator)__  
 
 ```ruby
 void main() {
@@ -383,7 +383,7 @@ void main() {
 }
 ```  
 
-__Example (Type Test Operators)__  
+__Example_6 (Type Test Operators)__  
 
 - We can use this in dart code to check the type or set the typecast in dart using as, is and is!.
 
