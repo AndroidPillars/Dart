@@ -1098,5 +1098,10 @@ class PrivateBank extends Banks {
 - It can be used to improve performance speed and improve application runtime.
 - __AOT compiler__ works by compiling your code before it is delivered to whatever runtime environment runs the code. 
 - The __AOT compiler__ is typically used when the app is ready to be deployed to either an appstore or an in-house production backend.
-- The major difference that exists between Ahead-Of-Time and Just-In-Time compilation is the time in which the compilation happens.
+- The major difference that exists between Ahead-Of-Time and Just-In-Time compilation is the time in which the compilation happens.  
+
+## Credits
+
+- https://dart-tutorial.com/ (Notes)
+- https://www.youtube.com/watch?v=Ej_Pcr4uC2Q (Tutorial)
 
