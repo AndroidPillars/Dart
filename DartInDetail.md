@@ -298,7 +298,7 @@ void main() {
     // TODO using Increment and Decrement Operator includes ++var, --var, var++, var--
     // TODO ++var increases the value of operands, whereas var++ returns the actual value of operands before the increment.
 
-    // TODO Post Increment (i.e.) Increase Value By 1. var = var + 1 (i.e.) a++ -> a = a + 1;
+    // TODO Post Increment -> Increase Value By 1. var = var + 1 (i.e.) a++ -> a = a + 1;
     // TODO First it will print and then increment the Value.
     a++;
     print(a);
