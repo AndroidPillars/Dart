@@ -564,6 +564,8 @@ void main() {
 
 ## For Loop
 
+-  We can use for loop to run a code block multiple times according to the condition.
+
 ```ruby
 void main() {
   var mList = [1, 2, 3, 4];
@@ -607,6 +609,13 @@ void main() {
 
 ## While Loop
 
+- In while loop, the loop will run until and unless the condition is true. 
+- We must write the conditions first before statements. 
+- This loop checks conditions on every iteration. 
+- If the condition is true, the code is executed, if the condition is false, then the loop stops.
+
+__Example__
+
 ```ruby
 void main() {
   var mList = [1, 2, 3, 4, 5];
@@ -620,6 +629,11 @@ void main() {
 ```
 
 ## DO-While Loop
+
+- Do while loop is used to run a block of code multiple times.
+- The loop’s body will be executed first, and then the condition is tested.
+
+__Example__
 
 ```ruby
 void main() {
@@ -636,6 +650,8 @@ void main() {
 
 ## Break
 
+- The break statement is used to exit a loop when you to break out of the loop immediately without checking the condition.
+
 ```ruby
 void main() {
   var mList = [1, 2, 3, 4, 5];
@@ -648,6 +664,12 @@ void main() {
 ```
 
 ## Continue
+
+- The continue statement skips the current iteration of a loop. 
+- It will bypass the statement of the loop. 
+- It does not terminate the loop but rather continues with the next iteration.
+
+__Example__
 
 ```ruby
 void main() {
