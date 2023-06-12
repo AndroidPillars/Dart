@@ -253,7 +253,40 @@ void main() {
 
 ## Operators
 
-- An Operator is a character that represents a specific mathematical or logical action or process.
+- Operators are used to perform mathematical and logical operations on the variables.
+- The Word 'Operands' represents the data.
+- The Word 'Operator' represents how the operands will be processed to produce a value.
+- Types -> Arithmetic Operators, Increment and Decrement Operators, Assignment Operators, Logical Operators and Type Test Operators.
+
+__Example (Arithmetic Operators)__
+
+```ruby
+void main() {
+    int a = 10;
+    int b = 3;
+
+    // TODO using Arithmetic Operator includes +, -, *, /, ~/, %, -expr
+
+    // TODO Addition
+    int c = a + b;
+    // TODO Subtraction
+    int d = a - b;
+    // TODO Multiplication
+    int e = a * b;
+    // TODO Division
+    double f = a / b;
+    // TODO Integer Division (i.e.) For dividing two operands and give output in integer
+    int g = a ~/ b;
+    // TODO Modulus (i.e.) Remainder after doing the Division
+    int h = a % b;
+    // TODO Unary Minus (i.e.) For reversing the sign of the expression
+    int i = -b;
+
+    print(i);
+}
+``` 
+
+__Example (Increment and Decrement Operators)__
 
 ```ruby
 void main() {
