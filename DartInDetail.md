@@ -66,7 +66,7 @@ void main() {
 
 - Comments are the set of statements that are ignored by the dart compiler during program execution. 
 - They are used to explain the code so that you or other people can understand it easily.
-- Type -> In-line Comment, Block Comment and Documentation.
+- Types -> In-line Comment, Block Comment and Documentation.
 
 __Example__
 
