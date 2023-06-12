@@ -286,7 +286,34 @@ void main() {
 }
 ``` 
 
-__Example (Increment and Decrement Operators)__
+__Example (Increment and Decrement Operators or Unary Operators)__ 
+
+```ruby
+void main() {
+    int a = 10;
+    int b = 3;
+    int c = 31;
+    int d = 35;
+
+    // TODO using Increment and Decrement Operator includes ++var, --var, var++, var--
+    // TODO ++var increases the value of operands, whereas var++ returns the actual value of operands before the increment.
+
+    a++;
+    print(a);
+
+    b--;
+    print(b);
+
+    ++c;
+    print(c);
+
+    ++d;
+    print(d);
+
+}
+```
+
+__Example__
 
 ```ruby
 void main() {
