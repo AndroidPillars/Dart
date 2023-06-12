@@ -318,7 +318,7 @@ void main() {
 }
 ```
 
-__Example_3 (Assignment Operator)__ 
+__Example_3 (Assignment Operators)__ 
 
 ```ruby
 void main() {
@@ -349,7 +349,7 @@ void main() {
 }
 ```
 
-__Example_4 (Relational Operator)__  
+__Example_4 (Relational Operators)__  
 
 ```ruby
 void main() {
@@ -367,7 +367,7 @@ void main() {
 }
 ```  
 
-__Example_5 (Logical Operator)__  
+__Example_5 (Logical Operators)__  
 
 ```ruby
 void main() {
