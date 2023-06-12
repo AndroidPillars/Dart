@@ -14,8 +14,8 @@
 | 10 | [Operators](DartInDetail.md#operators) |  
 | 11 | [Ternary Operator](DartInDetail.md#ternary-operator) |  
 | 12 | [Type Test Operator](DartInDetail.md#type-test-operator) |  
-| 13 | [DartInDetail.md#type-test-operator](DartInDetail.md#null-aware-operators--null-safety) |  
-| 14 | [DartInDetail.md#null-aware-operators--null-safety](DartInDetail.md#conditionals---ifelse) |  
+| 13 | [Null Aware Operators & Null Safety](DartInDetail.md#null-aware-operators--null-safety) |  
+| 14 | [Conditionals - IF/ELSE](DartInDetail.md#conditionals---ifelse) |  
 | 15 | [Enum(Enumeration) using Switch Case](DartInDetail.md#enumenumeration-using-switch-case) |  
 
 ## Key - Points
