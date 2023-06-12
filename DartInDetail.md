@@ -579,6 +579,10 @@ void main() {
 
 ## For-In Loop
 
+- This is also another type of for loop (i.e.) for-In loop.
+
+__Example__
+
 ```ruby
 void main() {
   var mList = [1, 2, 3, 4, 5];
