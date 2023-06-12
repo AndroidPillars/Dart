@@ -33,7 +33,11 @@ void main() {
   
   // TODO For Using Apostrophe and new line we have to do as of below.
   print("Github - It's is a Awesome Place to Learn \n the New Technology");
-  print('Github - It\'s is a Awesome Place to Learn \n the New Technology');  
+  print('Github - It\'s is a Awesome Place to Learn \n the New Technology'); 
+  
+  // TODO Using Raw String - Special Character will not be Evaluated.
+  var s = r'Github is a Awesome Place to Learn \n the New Technology';
+  print(s);
   
   // TODO We can also print the Multi-line String as of below.
   print('''Hello
