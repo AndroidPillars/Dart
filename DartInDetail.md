@@ -732,29 +732,36 @@ __Example 1__
 
 ```ruby
 void main() {
-  var mList = ['Android', 'Flutter', 'IOS'];
 
-  // TODO By using const it makes the List immutable
-  var mListOne = const ['Android', 'Flutter', 'IOS'];
+    // TODO using String List
+    List<String> nameList = ["Apple", "Orange", "Grapes"];
 
-  // TODO Using Standard For Loop
-  for (int i = 0; i < mList.length; i++) {
-    print(mList[i]);
-  }
+    // TODO using Mixed List
+    var mixedList = [10, "John", 18.8];
 
-  // TODO For getting the index Value
-  print(mList.indexOf('Android'));
-  
-  // TODO For adding an item
-  mList.add('React');
-  
-  // TODO For adding the item in specific position
-  mList.insert(1,'List');
+    var mList = ['Android', 'Flutter', 'IOS'];
 
-  // TODO Using For...In in Loop
-  for (String mStringValues in mList) {
-    print(mStringValues);
-  }
+    // TODO By using const it makes the List immutable
+    var mListOne = const ['Android', 'Flutter', 'IOS'];
+
+    // TODO Using Standard For Loop
+    for (int i = 0; i < mList.length; i++) {
+        print(mList[i]);
+    }
+
+    // TODO For getting the index Value
+    print(mList.indexOf('Android'));
+
+    // TODO For adding an item
+    mList.add('React');
+
+    // TODO For adding the item in specific position
+    mList.insert(1,'List');
+
+    // TODO Using For...In in Loop
+    for (String mStringValues in mList) {
+        print(mStringValues);
+    }
 }
 ```
 
@@ -776,13 +783,16 @@ void main() {
 
 ## Set
 
-- It is an unordered collection of unique items.
+- Set is a unique collection of items. 
+- We cannot store duplicate values in the Set. 
+- It is unordered, so it can be faster than lists while working with a large amount of data. 
+- Set is useful when you need to store unique values without considering the order of the input.
 
 __Example__
 
 ```ruby
 void main() {
-  var mList = {'Android', 'Flutter', 'IOS', 'Android'};
+  Set<String> mList = {'Android', 'Flutter', 'IOS', 'Android'};
 
   // TODO Using Standard For Loop
   for (String mListValues in mList) {
@@ -824,6 +834,36 @@ void main() {
   print(phoneBook.values);
 }
 ``` 
+
+## Where
+
+-  Where is used in list, set, map to filter specific items. 
+-  It returns a new list containing all the elements that satisfy the condition. 
+-  This is also called Where Filter in dart.
+
+__Example__
+
+```ruby
+void main() {
+    // TODO finding the odd numbers using Where
+    List<int> numbers = [2, 4, 6, 8, 10, 11, 12, 13, 14];
+
+    List<int> oddNumbers = numbers.where((number) => number.isOdd).toList();
+    print(oddNumbers);
+
+    List<String> days = [
+                            "Sunday",
+                            "Friday",
+                            "Saturday"
+                        ];
+
+    // TODO finding the word starts with S
+    List<String> mValue =
+        days.where((element) => element.startsWith("S")).toList();
+
+    print(mValue);
+}
+```
 
 ## Enum(Enumeration) using Switch Case
 
