@@ -865,39 +865,6 @@ void main() {
 }
 ```
 
-## Enum(Enumeration) using Switch Case
-
-- It is just a data type that contains some fixed set of constants which is declared using the keyword enum. 
-- When we require a predefined set of values which represents some kind of data, we use enum. 
-
-__Example__
-
-```ruby
-void main() {
-  var mSelectedGender = Gender.male;
-
-  switch (mSelectedGender) {
-    case Gender.male:
-      {
-        print(mSelectedGender.name);
-      }
-      break;
-
-    case Gender.female:
-      {
-        print(mSelectedGender.name);
-      }
-      break;
-
-    default:
-      print('No Data Found');
-  }
-}
-
-enum Gender { male, female }
-```  
-:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
-
 ## Functions
 
 - A Function is a block of organized, reusable code that is used to perform some action.
@@ -1077,6 +1044,40 @@ void fastDrive() {
   print('The Car is driving Fastly');
 }
 ```  
+
+## Enum(Enumeration) using Switch Case
+
+- It is just a data type that contains some fixed set of constants which is declared using the keyword enum. 
+- When we require a predefined set of values which represents some kind of data, we use enum. 
+
+__Example__
+
+```ruby
+void main() {
+  var mSelectedGender = Gender.male;
+
+  switch (mSelectedGender) {
+    case Gender.male:
+      {
+        print(mSelectedGender.name);
+      }
+      break;
+
+    case Gender.female:
+      {
+        print(mSelectedGender.name);
+      }
+      break;
+
+    default:
+      print('No Data Found');
+  }
+}
+
+enum Gender { male, female }
+```  
+:arrow_up: [__Back to Top__](DartInDetail.md#topics)  
+
 
 ## Future, Async and Await
 
