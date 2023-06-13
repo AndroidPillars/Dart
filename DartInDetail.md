@@ -1050,6 +1050,30 @@ void fastDrive() {
 }
 ```  
 
+## Scope
+
+- Dart uses curly braces {} to determine the scope of variables.
+- Types -> Method Scope, Global Scope.
+
+__Example (Method Scope)__
+
+```ruby
+void main() {
+    String text = "Hello World";
+    print(text);
+}
+```
+
+__Example (Global Scope)__
+
+```ruby
+String text = "Hello World";
+
+void main() {
+    print(text);
+}
+```
+
 ## Enum(Enumeration) using Switch Case
 
 - It is just a data type that contains some fixed set of constants which is declared using the keyword enum. 
