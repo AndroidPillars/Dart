@@ -870,8 +870,8 @@ void main() {
 
 - A Function is a block of organized, reusable code that is used to perform some action.
 - In Dart Programming Language, each Function is an object of Class Function.
-- __Anonymous Function__ is just a Function just as its name implies it has no name.
-- Parameter Types - Positional Paramter, Optional Positional Parameter, Named Parameter
+- Types Of Function -> No Parameter And No Return Type, Parameter And No Return Type, No Parameter And Return Type, Parameter And Return Type.
+- Parameter Types -> Positional Paramter, Optional Positional Parameter, Named Parameter
 - By using Positional Parameter we can't skip or interchange the Parameters.
 - By using Optional Positional Parameter we can skip the parameter but we can't interchange the Parameters.
 - By using Named Parameter we can skip the parameter or interchange the Parameters.
@@ -879,8 +879,12 @@ void main() {
 __Example 1 (Named Function With No Parameter)__
 
 ```ruby
+void main() {
+    methodNameOne();
+}
+
 void methodNameOne() {
-  print('Hello World');
+    print('Hello World');
 }
 ```
 
@@ -897,7 +901,64 @@ int addTwoNumbers(int a, int b) {
 }
 ```
 
-__Example 3 (Anonymous Function)__
+__Example 3 (Named Function Using Positional Paramters)__
+
+```ruby
+void main() {
+    var mAddingTwoValues =  methodNameTwo(1, 2);
+    print(mAddingTwoValues);
+}
+
+int methodNameTwo(int mValueOne, int mValueTwo) {
+    return mValueOne + mValueTwo;
+}
+```
+
+__Example 4 (Named Function Using Optional Positional Parameters and Default Value)__
+
+```ruby
+void main() {
+    var mValue = methodNameThree(1);
+    print(mValue);
+}
+
+int methodNameThree(int? mValueOne, [String? mValueTwo, int? mValueThree = 0]){
+    return mValueOne! + mValueThree!;
+}
+```
+
+__Example 5 (Named Function Using Named Parameters, required keyword and Default Value)__
+
+```ruby
+void main() {
+    var mValue = methodNameThree(mValueOne: 1);
+    print(mValue);
+}
+
+int? methodNameThree({required int? mValueOne, int? mValueTwo, int? mValueThree = 3}) {
+    return mValueOne! + mValueThree!;
+}
+```
+
+__Example 6 (Dynamic Return Type)__
+
+```ruby
+void main() {
+  methodNameOne(methodNameTwo(1, 2));
+}
+
+void methodNameOne(var msg) {
+  print(msg);
+}
+
+dynamic methodNameTwo(var a, var b) {
+  return a + b;
+}
+```  
+
+__Example 7 (Anonymous Function)__
+
+- Anonymous Function is just a Function just as its name implies it has no name.
 
 ```ruby
 void main() {
@@ -912,65 +973,6 @@ void main() {
 ```ruby
 onPressed: (){
 //TODO Something
-}
-```
-
-__Example 4 (Named Function Using Positional Paramters)__
-
-```ruby
-bool methodNameTwo(int mValueOne, int mValueTwo) {
-  return true;
-}
-```
-
-__Example 5 (Named Function Using Optional Positional Parameters)__
-
-```ruby
-void main() {
-  print(methodNameThree(1));
-}
-
-int methodNameThree(int mValueOne, [String? mValueTwo]) {
-  return mValueOne;
-}
-```
-
-__Example 6 (Named Function Using Named Parameters)__
-
-```ruby
-void main() {
-  print(methodNameThree(mValueOne: 1));
-}
-
-int? methodNameThree({int? mValueOne, String? mValueTwo}) {
-  return mValueOne;
-}
-```  
-
-__Example 7 (Named Function Using Named Parameters and Default Value)__
-
-```ruby
-main() {
-  print(methodNameThree(mValueOne: 1));
-}
-
-int methodNameThree({required int mValueOne, int mValueTwo = 0}) =>
-    mValueOne + mValueTwo;
-```
-
-__Example 8 (Dynamic Return Type)__
-
-```ruby
-void main() {
-  methodNameOne(methodNameTwo(1, 2));
-}
-
-void methodNameOne(var msg) {
-  print(msg);
-}
-
-dynamic methodNameTwo(var a, var b) {
-  return a + b;
 }
 ```
 
