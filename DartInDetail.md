@@ -956,7 +956,7 @@ dynamic methodNameTwo(var a, var b) {
 }
 ```  
 
-__Example 7 (Anonymous Function)__
+## Anonymous Function
 
 - Anonymous Function is just a Function just as its name implies it has no name.
 
