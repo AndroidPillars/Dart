@@ -721,6 +721,110 @@ void validateAge(int age) {
 }
 ```  
 
+## Collections 
+
+## List
+
+- When we want to store multiple values in the same variable, we can use List.
+- List in dart is similar to Arrays in other programming languages.
+
+__Example 1__
+
+```ruby
+void main() {
+  var mList = ['Android', 'Flutter', 'IOS'];
+
+  // TODO By using const it makes the List immutable
+  var mListOne = const ['Android', 'Flutter', 'IOS'];
+
+  // TODO Using Standard For Loop
+  for (int i = 0; i < mList.length; i++) {
+    print(mList[i]);
+  }
+
+  // TODO For getting the index Value
+  print(mList.indexOf('Android'));
+  
+  // TODO For adding an item
+  mList.add('React');
+  
+  // TODO For adding the item in specific position
+  mList.insert(1,'List');
+
+  // TODO Using For...In in Loop
+  for (String mStringValues in mList) {
+    print(mStringValues);
+  }
+}
+```
+
+__Example 2__
+
+```ruby
+void main() {
+  var mList = ['Android', 'Flutter', 'IOS'];
+
+  // TODO Simply copying the mList using the Spread Operator to mListOne
+  var mListOne = [...mList];
+
+  // TODO Using Standard For Loop
+  for (int i = 0; i < mListOne.length; i++) {
+    print(mList[i]);
+  }
+}
+```  
+
+## Set
+
+- It is an unordered collection of unique items.
+
+__Example__
+
+```ruby
+void main() {
+  var mList = {'Android', 'Flutter', 'IOS', 'Android'};
+
+  // TODO Using Standard For Loop
+  for (String mListValues in mList) {
+    print(mListValues);
+  }
+}
+```  
+
+## Maps
+
+- Map is an object that stores data in the form of a key-value pair.
+- Each value is associated with its key, and it is used to access its corresponding value.
+- Both keys and values can be any type. 
+
+__Need to Know,__
+
+- In Map, each key must be unique, but the same value can occur multiple times.
+- But Unlike Lists Maps are unOrdered.
+
+__Example__
+
+```ruby
+void main() {
+  Map<String, int> phoneBook = {
+    'Android': 99998888,
+    'Flutter': 99956565,
+    'IOS': 99778888,
+  };
+  
+  print(phoneBook['Android']);
+
+  phoneBook['Android'] = 888888888;
+  print(phoneBook['Android']);
+
+  print(phoneBook.length);
+
+  print(phoneBook.keys);
+
+  print(phoneBook.values);
+}
+``` 
+
 ## Enum(Enumeration) using Switch Case
 
 - It is just a data type that contains some fixed set of constants which is declared using the keyword enum. 
@@ -933,110 +1037,6 @@ void fastDrive() {
   print('The Car is driving Fastly');
 }
 ```  
-
-## Collections 
-
-## List
-
-- When we want to store multiple values in the same variable, we can use List.
-- List in dart is similar to Arrays in other programming languages.
-
-__Example 1__
-
-```ruby
-void main() {
-  var mList = ['Android', 'Flutter', 'IOS'];
-
-  // TODO By using const it makes the List immutable
-  var mListOne = const ['Android', 'Flutter', 'IOS'];
-
-  // TODO Using Standard For Loop
-  for (int i = 0; i < mList.length; i++) {
-    print(mList[i]);
-  }
-
-  // TODO For getting the index Value
-  print(mList.indexOf('Android'));
-  
-  // TODO For adding an item
-  mList.add('React');
-  
-  // TODO For adding the item in specific position
-  mList.insert(1,'List');
-
-  // TODO Using For...In in Loop
-  for (String mStringValues in mList) {
-    print(mStringValues);
-  }
-}
-```
-
-__Example 2__
-
-```ruby
-void main() {
-  var mList = ['Android', 'Flutter', 'IOS'];
-
-  // TODO Simply copying the mList using the Spread Operator to mListOne
-  var mListOne = [...mList];
-
-  // TODO Using Standard For Loop
-  for (int i = 0; i < mListOne.length; i++) {
-    print(mList[i]);
-  }
-}
-```  
-
-## Set
-
-- It is an unordered collection of unique items.
-
-__Example__
-
-```ruby
-void main() {
-  var mList = {'Android', 'Flutter', 'IOS', 'Android'};
-
-  // TODO Using Standard For Loop
-  for (String mListValues in mList) {
-    print(mListValues);
-  }
-}
-```  
-
-## Maps
-
-- Map is an object that stores data in the form of a key-value pair.
-- Each value is associated with its key, and it is used to access its corresponding value.
-- Both keys and values can be any type. 
-
-__Need to Know,__
-
-- In Map, each key must be unique, but the same value can occur multiple times.
-- But Unlike Lists Maps are unOrdered.
-
-__Example__
-
-```ruby
-void main() {
-  Map<String, int> phoneBook = {
-    'Android': 99998888,
-    'Flutter': 99956565,
-    'IOS': 99778888,
-  };
-  
-  print(phoneBook['Android']);
-
-  phoneBook['Android'] = 888888888;
-  print(phoneBook['Android']);
-
-  print(phoneBook.length);
-
-  print(phoneBook.keys);
-
-  print(phoneBook.values);
-}
-``` 
 
 ## Future, Async and Await
 
