@@ -922,8 +922,8 @@ void main() {
     print(mValue);
 }
 
-int methodNameThree(int? mValueOne, [String? mValueTwo, int? mValueThree = 0]){
-    return mValueOne! + mValueThree!;
+int methodNameThree(int? mValueOne, [String? mValueTwo, int? mValueThree = 0]) {
+    return (mValueOne ?? 10) + mValueThree!;
 }
 ```
 
@@ -931,12 +931,12 @@ __Example 5 (Named Function Using Named Parameters, required keyword and Default
 
 ```ruby
 void main() {
-    var mValue = methodNameThree(mValueOne: 1);
+    var mValue = methodNameThree(mValueOne: 1, mValueThree: 10);
     print(mValue);
 }
 
 int? methodNameThree({required int? mValueOne, int? mValueTwo, int? mValueThree = 3}) {
-    return mValueOne! + mValueThree!;
+    return (mValueOne ?? 10) + mValueThree!;
 }
 ```
 
