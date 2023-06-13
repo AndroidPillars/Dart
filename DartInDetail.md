@@ -407,6 +407,7 @@ void main() {
 
 - Dart provides Null Aware Operators to make us deal with nullable variables.
 - If a variable is null we cannot perform an action and if we do so this may lead to null pointer exception & our application will crash during run-time.
+- Null Aware Operators includes ?., ??, ??=
 
 __Example 1__ 
 
