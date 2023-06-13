@@ -960,6 +960,8 @@ dynamic methodNameTwo(var a, var b) {
 
 - Anonymous Function is just a Function just as its name implies it has no name.
 
+__Example__
+
 ```ruby
 void main() {
   var mList = {'Android', 'Flutter', 'IOS', 'Android'};
