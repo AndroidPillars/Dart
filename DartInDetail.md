@@ -938,8 +938,8 @@ void fastDrive() {
 
 ## List
 
-- Dart represents arrays in the form of List objects.
-- A List is simply an ordered group of objects. 
+- When we want to store multiple values in the same variable, we can use List.
+- List in dart is similar to Arrays in other programming languages.
 
 __Example 1__
 
@@ -957,8 +957,10 @@ void main() {
 
   // TODO For getting the index Value
   print(mList.indexOf('Android'));
+  
   // TODO For adding an item
   mList.add('React');
+  
   // TODO For adding the item in specific position
   mList.insert(1,'List');
 
