@@ -1129,7 +1129,8 @@ void main() {
 
     Function speak = talk();
 
-    speak(); // talk() // say() //  print(msg) // "Hello World"
+    // TODO talk() => say() =>  print(msg) => "Hello World"
+    speak(); 
 }
 ```
 
