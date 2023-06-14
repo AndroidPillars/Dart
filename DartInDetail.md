@@ -1052,8 +1052,9 @@ void fastDrive() {
 
 ## Scope
 
+- The scope is a concept that refers to where values can be accessed or referenced. 
 - Dart uses curly braces {} to determine the scope of variables.
-- Types -> Method Scope, Global Scope.
+- Types -> Method Scope, Global Scope, Lexical Scope.
 
 __Example (Method Scope)__
 
@@ -1073,6 +1074,21 @@ void main() {
     print(text);
 }
 ```  
+
+__Example (Lexical Scope)__
+
+```ruby
+void main() {
+    int a = 1;
+    int b = 2;
+
+    addTwoNum() {
+        print(a + b);
+    }
+
+    addTwoNum();
+}
+```
 
 ## Math
 
