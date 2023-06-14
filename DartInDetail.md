@@ -1072,6 +1072,53 @@ String text = "Hello World";
 void main() {
     print(text);
 }
+```  
+
+## Math
+
+- Math helps you to perform mathematical calculations efficiently. 
+- By using math, we can generate random number, find square root, find power of number, or round specific numbers. 
+
+__Example__
+
+```ruby
+import 'dart:math';
+
+void main() {
+
+    // TODO Generating Random Numbers
+    Random random = Random();
+    int mRandomNo = random.nextInt(10);
+
+    print("Generated Random Number Between 0 to 9: $mRandomNo");
+
+    // TODO Generating Random Numbers Between
+    int min = 10;
+    int max = 20;
+
+    int mRandomNumber = min + Random().nextInt((max + 1) - min);
+    print("Generated Random Number Between $min and $max is: $mRandomNumber");
+
+    // TODO Generating Random Boolean And Double Value
+    bool mRandomBool = Random().nextBool();
+    double mRandomDouble = Random().nextDouble();
+
+    print("Generated Random bool value is: $mRandomBool");
+    print("Generated Random double value is: $mRandomDouble");
+
+    // TODO Generate a List Of Random Numbers
+    List<int> randomList = List.generate(5, (_) => Random().nextInt(100) + 1);
+    print(randomList);
+
+    // TODO Some Useful Math Functions In Dart
+    int num1 = 10;
+    int num2 = 2;
+
+    print("Power is $pow(num1,num2)");
+    print("Maximum is $max(num1,num2)");
+    print("Minimum is $min(num1,num2)");
+    print("Square root is $sqrt(25)");
+}
 ```
 
 ## Enum(Enumeration) using Switch Case
