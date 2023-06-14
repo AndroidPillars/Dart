@@ -1105,27 +1105,27 @@ void main() {
 
     String message = "Dar is Programming Language";
 
-    Function showMessage = () {
+    showMessage() {
         message = "Dart is awesome";
         print(message);
-    };
+    }
 
     showMessage();
 
     // TODO 2. A closure is a function object that has access to variables in its lexical scope,
     // even when the function is used outside of its original scope.
 
-    Function talk = () {
+    talk() {
 
         String msg = "Hi";
 
-        Function say = () {
+        say() {
             msg = "Hello World";
             print(msg);
-        };
+        }
 
         return say;
-    };
+    }
 
     Function speak = talk();
 
