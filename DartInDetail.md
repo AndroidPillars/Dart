@@ -724,7 +724,7 @@ void validateAge(int age) {
 }
 ```  
 
-## Collections 
+## 3. Collections 
 
 ## List
 
@@ -868,14 +868,14 @@ void main() {
 }
 ```
 
-## Functions
+## 4. Functions
 
 - A Function is a block of organized, reusable code that is used to perform some action.
-- In Dart Programming Language, each Function is an object of Class Function.
+- In Dart Programming Language, each Function is an object of the Class Function.
 - Types Of Function -> No Parameter And No Return Type, Parameter And No Return Type, No Parameter And Return Type, Parameter And Return Type.
-- Parameter Types -> Positional Paramter, Optional Positional Parameter, Named Parameter.
+- Parameter Types -> Positional Parameter, Optional Positional Parameter, Named Parameter.
 - By using Positional Parameter we can't skip or interchange the Parameters.
-- By using Optional Positional Parameter we can skip the parameter but we can't interchange the Parameters.
+- By using the Optional Positional Parameter we can skip the parameter but we can't interchange the Parameters.
 - By using Named Parameter we can skip the parameter or interchange the Parameters.
 
 __Example 1 (Named Function With No Parameter)__
