@@ -18,6 +18,8 @@
 | 14 | [Conditionals - IF/ELSE](DartInDetail.md#conditionals---ifelse) |  
 | 15 | [Enum(Enumeration) using Switch Case](DartInDetail.md#enumenumeration-using-switch-case) |  
 
+## 1. Introduction & Basics
+
 ## Key - Points
 
 - Current Dart Version as on 10 May 2023 -> Dart 3.0 
@@ -458,7 +460,7 @@ void main() {
 ```  
 :arrow_up: [__Back to Top__](DartInDetail.md#topics)  
 
-## Conditions & Loops
+## 2. Conditions & Loops
 
 ## Conditions 
 
