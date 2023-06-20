@@ -729,9 +729,24 @@ void validateAge(int age) {
 ## List
 
 - When we want to store multiple values in the same variable, we can use List.
-- List in dart is similar to Arrays in other programming languages.
+- List in Dart is similar to Arrays in other programming languages.
+- Types -> Fixed Length List, Growable List [Mostly Used].
 
-__Example 1__
+__Example 1 [Fixed Length List]__
+
+```ruby
+void main() {
+    // TODO Creating a filled list of integers
+    List<int> numbers = List.filled(5, 0);
+    print(numbers);
+
+    // TODO Updating elements in the filled list
+    numbers[2] = 10;
+    print(numbers);
+}
+```
+
+__Example 2 [Growable List]__
 
 ```ruby
 void main() {
@@ -765,10 +780,11 @@ void main() {
     for (String mStringValues in mList) {
         print(mStringValues);
     }
+ 
 }
 ```
 
-__Example 2__
+__Example 3__
 
 ```ruby
 void main() {
